@@ -133,6 +133,11 @@
     font-size: 0.85rem;
   }
   @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+    /* ───────── RTL — dotyczy wyłącznie sekcji arabskiej ───────── */
+    [dir="rtl"] ul      { padding-left: 0; padding-right: 1.3rem; }
+    [dir="rtl"] .core   { border-left: none; border-right: 4px solid var(--amber); }
+    [dir="rtl"] h3 .num { margin-right: 0; margin-left: 0.5rem; }
+
 </style>
 </head>
 <body>
@@ -141,7 +146,7 @@
   <div class="wrap">
     <p class="kicker">Neuron M31</p>
     <h1>Privacy Policy<br>M31 Edu Cube 2D</h1>
-    <p class="sub">Zásady ochrany osobních údajů · Adatvédelmi szabályzat · Polityka prywatności · Zásady ochrany osobných údajov</p>
+    <p class="sub">Zásady ochrany osobních údajů · Datenschutzerklärung · Política de privacidad · Politique de confidentialité · Informativa sulla privacy · Adatvédelmi szabályzat · Privacyverklaring · Polityka prywatności · Política de Privacidade (Brasil) · Política de Privacidade (Portugal) · Zásady ochrany osobných údajov · Gizlilik Politikası · Политика конфиденциальности · <bdi>سياسة الخصوصية</bdi> · 隐私政策 · プライバシーポリシー · 개인정보처리방침</p>
     <dl class="meta">
       <dt>Application</dt><dd>ch.m31.edu.cube2d</dd>
       <dt>Valid from</dt><dd>2026-11-18</dd>
@@ -153,92 +158,31 @@
 
 <nav class="langs">
   <div class="wrap">
-    <a href="#en">ENGLISH</a>
-    <a href="#cs">ČESKY</a>
-    <a href="#hu">MAGYAR</a>
-    <a href="#pl">POLSKI</a>
-    <a href="#sk">SLOVENSKY</a>
-  </div>
+      <a href="#cs">ČESKY</a>
+      <a href="#de">DEUTSCH</a>
+      <a href="#en">ENGLISH</a>
+      <a href="#es">ESPAÑOL</a>
+      <a href="#fr">FRANÇAIS</a>
+      <a href="#it">ITALIANO</a>
+      <a href="#hu">MAGYAR</a>
+      <a href="#nl">NEDERLANDS</a>
+      <a href="#pl">POLSKI</a>
+      <a href="#br">PORTUGUÊS (BR)</a>
+      <a href="#pt">PORTUGUÊS (PT)</a>
+      <a href="#sk">SLOVENSKY</a>
+      <a href="#tr">TÜRKÇE</a>
+      <a href="#ru">РУССКИЙ</a>
+      <a href="#ar"><bdi>العربية</bdi></a>
+      <a href="#zh">中文</a>
+      <a href="#ja">日本語</a>
+      <a href="#ko">한국어</a>
+    </div>
 </nav>
 
 <main class="wrap">
 
-<!-- ══════════════════ ENGLISH ══════════════════ -->
-<section class="lang" id="en" lang="en">
-  <h2>Privacy Policy</h2>
-
-  <div class="core">
-    <p><strong>We have no accounts and no server of our own, and we do not collect your personal data.</strong> The iPhone, iPad and Mac version contains no advertising and no analytics.</p>
-    <p>The free Android version shows a Google AdMob ad <strong>only when you choose to watch one</strong>. Google processes the data described in section 06 for this. With Premium there are no ads.</p>
-  </div>
-
-  <h3><span class="num">01</span>Who is responsible</h3>
-  <p>The app “M31 Edu Cube 2D” (identifier <code>ch.m31.edu.cube2d</code>) is published by Neuron M31 (Andrzej Węgrzyn). For privacy matters, write to the address given at the top of this page.</p>
-
-  <h3><span class="num">02</span>Permissions</h3>
-  <p>The app does not ask for access to your microphone, camera, contacts, photos, files or location, and shows no system permission prompts. The Android version has ordinary permissions that are granted without asking: vibration, internet access, Google Play purchases and — for the Google ad module — the advertising ID. Details are in sections 04 and 06.</p>
-
-  <h3><span class="num">03</span>Data on your device</h3>
-  <p>The app stores <strong>on your device</strong>: the language you chose, your first name (if you enter it — used only for the greeting in the app), an installation ID (made from the language code and the time of the first start; it is shown under “About” so that you can quote it when you contact us), settings, the game in progress, your cube designs, the free-version limit counters and whether Premium is active. The app sends none of this anywhere, and we have no access to it.</p>
-  <p>If you have Android Backup (Auto Backup) enabled, Android may copy this data to your Google account; on iOS the same can happen through an iCloud backup of your device. That happens within Google’s or Apple’s services, under their privacy policies, and remains under your control — you can turn it off in your device settings.</p>
-  <p>Uninstalling the app deletes the stored data. You can also reset it by clearing the app’s data in system settings.</p>
-
-  <h3><span class="num">04</span>In-app purchases</h3>
-  <p>Premium is a one-time purchase made through the billing system of Google Play (Android) or the App Store (iPhone, iPad, Mac). The store handles the entire purchase — the app <strong>never sees or stores</strong> card details, billing addresses or any other payment information. It only asks the store whether Premium belongs to the account signed in on the device and stores that answer locally. The stores send us sales reports (for example order number, date, country and price), which we need for accounting and refunds.</p>
-  <p>Premium bought in the App Store works on all your iPhone, iPad and Mac devices signed in with the same Apple Account. Purchases do not transfer between Google Play and the App Store.</p>
-  <p>The app connects to the internet for two purposes only: to handle purchases through the store and — only in the free Android version — to show an ad (section 06).</p>
-
-  <h3><span class="num">05</span>Challenges</h3>
-  <p>A challenge is a short code (16 characters, or 24 in free play; it starts with <code>M31</code>) that describes a scrambled cube: its size, colour arrangement, net and number of moves. It contains no name, no account, no device identifier and no free text. The app does not send codes to any server.</p>
-  <p>When you share a challenge, you choose how: with your device’s share function or by copying the code. The service you pick (a messenger, e-mail, etc.) handles the message under its own privacy policy.</p>
-  <p>You receive a challenge by typing the code or using “Paste from clipboard” — the app reads the clipboard only when you tap that button. Nothing is sent back to the sender.</p>
-
-  <h3><span class="num">06</span>Advertising — free Android version only</h3>
-  <p><strong>When.</strong> The Google ad module runs only in the free Android version, after the trial period. During the trial, with Premium and in the iPhone, iPad and Mac version there are no ads.</p>
-  <p><strong>How.</strong> It is a rewarded ad: it appears only after you tap “Watch an ad” and, once watched, unlocks extra features for 10 minutes. The app never shows ads on its own. So that the ad can start without waiting, the module loads it in advance — Google may therefore process data even if you never watch an ad.</p>
-  <p><strong>Who.</strong> Google AdMob — Google Ireland Limited for users in the European Economic Area and Switzerland, Google LLC elsewhere.</p>
-  <p><strong>What data.</strong> Google may process:</p>
-  <ul>
-    <li>your IP address, also to estimate your approximate location,</li>
-    <li>the advertising ID and the app set ID,</li>
-    <li>interactions with the app and the ad (app start, taps, video views),</li>
-    <li>diagnostic data (for example launch time and performance).</li>
-  </ul>
-  <p>Purposes: showing and measuring ads, analytics and fraud prevention. The data is transmitted encrypted. From Google we receive only aggregated statistics (such as the number of ads shown), with no data that identifies you.</p>
-  <p><strong>Consent.</strong> In the European Economic Area, the United Kingdom and Switzerland, Google’s consent form appears before the first ad. You can change your choice at any time: Settings → “Ad privacy settings”. If you do not consent, Google may show non-personalised or limited ads. Google’s consent module stores your choice on the device.</p>
-  <p><strong>No lock-out.</strong> If no ad can be shown (no consent, no connection, no ad available), the app shows a card about our app M31 Edu Arabic (section 07) and unlocks the features anyway.</p>
-  <p><strong>Advertising ID.</strong> You can reset or delete it in the Android settings (Privacy → Ads, or Google → Ads).</p>
-  <p><strong>Ad content</strong> is limited to Google’s “PG” maturity rating.</p>
-  <p><strong>Legal basis</strong> (GDPR, UK GDPR, Swiss Federal Act on Data Protection): your consent where it is required; otherwise our legitimate interest in financing the free version and in preventing fraud.</p>
-  <p>More: <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use its services</a> · <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
-
-  <h3><span class="num">07</span>Promotion of our own app</h3>
-  <p>When Google has no ad, the app shows a card about our app M31 Edu Arabic. “View in store” opens Google Play. The app passes no data on when doing so.</p>
-
-  <h3><span class="num">08</span>What the app does not do</h3>
-  <ul>
-    <li>no user account, no sign-in,</li>
-    <li>collects no name, email address or phone number — your first name, if you enter it, stays on the device,</li>
-    <li>does not determine your location (only Google may estimate an approximate location from the IP address in the version with ads, section 06),</li>
-    <li>has no analytics, usage statistics or crash reporting of its own,</li>
-    <li>never shows ads on its own, and none at all on iPhone, iPad and Mac,</li>
-    <li>has no chat, no user-submitted content and no leaderboards,</li>
-    <li>sells no data and shares none with third parties; the only exception is the Google ad module in the free Android version (section 06).</li>
-  </ul>
-
-  <h3><span class="num">09</span>Children</h3>
-  <p>M31 Edu Cube 2D is an educational puzzle. The free Android version, which can show an ad, is not directed at children under 13, and ad content is limited (section 06). The iPhone, iPad and Mac version contains no ads and collects no data. We do not knowingly collect personal data from children. Purchases are handled by the store, which applies its own parental controls.</p>
-
-  <h3><span class="num">10</span>Your rights</h3>
-  <p>Under the GDPR, the UK GDPR and the Swiss Federal Act on Data Protection you have the right to access, rectification, erasure, restriction of processing, data portability and objection, and the right to lodge a complaint with a data protection authority. You can withdraw your consent to ads at any time in Settings → “Ad privacy settings”.</p>
-  <p>We hold no personal data about you ourselves, so there is nothing we could disclose, correct or delete. Advertising data is processed by Google — you can manage it in <a href="https://myadcenter.google.com/">My Ad Center</a>. You control the data stored by the app through your device settings. If you have any privacy questions, write to the contact address.</p>
-
-  <h3><span class="num">11</span>Changes to this policy</h3>
-  <p>This version of the policy covers advertising in the Android version (from app version 1.0.001). If the app’s behaviour changes again, we will update this page and the “Valid from” date at the top.</p>
-
-</section>
-
 <!-- ══════════════════ ČESKY ══════════════════ -->
+
 <section class="lang" id="cs" lang="cs">
   <h2>Zásady ochrany osobních údajů</h2>
 
@@ -313,7 +257,388 @@
 
 </section>
 
+<!-- ══════════════════ DEUTSCH ══════════════════ -->
+
+<section class="lang" id="de" lang="de">
+  <h2>Datenschutzerklärung</h2>
+
+  <div class="core">
+    <p><strong>Wir haben keine Konten und keinen eigenen Server, und wir erheben Ihre personenbezogenen Daten nicht.</strong> Die Version für iPhone, iPad und Mac enthält keine Werbung und keine Analysewerkzeuge.</p>
+    <p>Die kostenlose Android-Version zeigt eine Google-AdMob-Anzeige <strong>nur dann, wenn Sie sie selbst starten</strong>. Google verarbeitet dabei die in Abschnitt 06 beschriebenen Daten. Mit Premium gibt es keine Werbung.</p>
+  </div>
+
+  <h3><span class="num">01</span>Wer verantwortlich ist</h3>
+  <p>Die App „M31 Edu Cube 2D“ (Kennung <code>ch.m31.edu.cube2d</code>) wird von Neuron M31 (Andrzej Węgrzyn) herausgegeben. In Datenschutzfragen schreiben Sie an die oben auf dieser Seite angegebene Adresse.</p>
+
+  <h3><span class="num">02</span>Berechtigungen</h3>
+  <p>Die App fragt nicht nach Zugriff auf Mikrofon, Kamera, Kontakte, Fotos, Dateien oder Standort und zeigt keine Systemdialoge für Berechtigungen. Die Android-Version hat gewöhnliche Berechtigungen, die ohne Nachfrage erteilt werden: Vibration, Internetzugang, Käufe über Google Play und — für das Werbemodul von Google — die Werbe-ID. Einzelheiten stehen in den Abschnitten 04 und 06.</p>
+
+  <h3><span class="num">03</span>Daten auf Ihrem Gerät</h3>
+  <p>Die App speichert <strong>auf Ihrem Gerät</strong>: die gewählte Sprache, Ihren Vornamen (wenn Sie ihn eingeben — er dient nur der Begrüßung in der App), eine Installationskennung (gebildet aus dem Sprachcode und dem Zeitpunkt des ersten Starts; sie wird unter „Über die App“ angezeigt, damit Sie sie bei einer Kontaktaufnahme angeben können), die Einstellungen, das laufende Spiel, Ihre Würfelentwürfe, die Zähler für die Grenzen der kostenlosen Version und die Information, ob Premium aktiv ist. Die App sendet davon nichts irgendwohin, und wir haben keinen Zugriff darauf.</p>
+  <p>Wenn Sie Android-Backup (Auto Backup) aktiviert haben, kann Android diese Daten in Ihr Google-Konto kopieren; unter iOS kann dasselbe über ein iCloud-Backup Ihres Geräts geschehen. Das geschieht innerhalb der Dienste von Google oder Apple, nach deren Datenschutzerklärungen, und bleibt unter Ihrer Kontrolle — Sie können es in den Geräteeinstellungen abschalten.</p>
+  <p>Das Deinstallieren der App löscht die gespeicherten Daten. Sie können sie auch zurücksetzen, indem Sie die Daten der App in den Systemeinstellungen löschen.</p>
+
+  <h3><span class="num">04</span>Käufe in der App</h3>
+  <p>Premium ist ein einmaliger Kauf über das Abrechnungssystem von Google Play (Android) oder des App Store (iPhone, iPad, Mac). Den gesamten Kauf wickelt der Store ab — die App <strong>sieht und speichert</strong> keine Kartendaten, Rechnungsadressen oder sonstigen Zahlungsinformationen. Sie fragt den Store nur, ob Premium zu dem auf dem Gerät angemeldeten Konto gehört, und speichert diese Antwort lokal. Die Stores übermitteln uns Verkaufsberichte (zum Beispiel Bestellnummer, Datum, Land und Preis), die wir für die Buchhaltung und für Rückerstattungen benötigen.</p>
+  <p>Im App Store gekauftes Premium funktioniert auf allen Ihren Geräten iPhone, iPad und Mac, die mit demselben Apple-Account angemeldet sind. Käufe werden nicht zwischen Google Play und App Store übertragen.</p>
+  <p>Die App verbindet sich nur zu zwei Zwecken mit dem Internet: um einen Kauf über den Store abzuwickeln und — nur in der kostenlosen Android-Version — um eine Anzeige zu zeigen (Abschnitt 06).</p>
+
+  <h3><span class="num">05</span>Herausforderungen</h3>
+  <p>Eine Herausforderung ist ein kurzer Code (16 Zeichen, im freien Spiel 24; er beginnt mit <code>M31</code>), der einen verdrehten Würfel beschreibt: seine Größe, die Farbanordnung, das Netz und die Zahl der Züge. Er enthält keinen Namen, kein Konto, keine Gerätekennung und keinen freien Text. Die App sendet Codes an keinen Server.</p>
+  <p>Wenn Sie eine Herausforderung teilen, wählen Sie selbst, wie: mit der Teilen-Funktion Ihres Geräts oder durch Kopieren des Codes. Der von Ihnen gewählte Dienst (ein Messenger, E-Mail usw.) verarbeitet die Nachricht nach seiner eigenen Datenschutzerklärung.</p>
+  <p>Eine Herausforderung nehmen Sie an, indem Sie den Code eingeben oder „Aus der Zwischenablage einfügen“ verwenden — die App liest die Zwischenablage nur, wenn Sie diese Schaltfläche antippen. An den Absender wird nichts zurückgesendet.</p>
+
+  <h3><span class="num">06</span>Werbung — nur in der kostenlosen Android-Version</h3>
+  <p><strong>Wann.</strong> Das Werbemodul von Google läuft nur in der kostenlosen Android-Version, nach Ablauf des Testzeitraums. Im Testzeitraum, mit Premium und in der Version für iPhone, iPad und Mac gibt es keine Werbung.</p>
+  <p><strong>Wie.</strong> Es ist eine Anzeige mit Belohnung: Sie erscheint erst, nachdem Sie „Anzeige ansehen“ angetippt haben, und schaltet nach dem Ansehen für 10 Minuten zusätzliche Funktionen frei. Die App zeigt niemals von sich aus Werbung. Damit die Anzeige ohne Wartezeit starten kann, lädt das Modul sie im Voraus — Google kann daher Daten verarbeiten, auch wenn Sie nie eine Anzeige ansehen.</p>
+  <p><strong>Wer.</strong> Google AdMob — Google Ireland Limited für Nutzer im Europäischen Wirtschaftsraum und in der Schweiz, anderswo Google LLC.</p>
+  <p><strong>Welche Daten.</strong> Google kann verarbeiten:</p>
+  <ul>
+    <li>Ihre IP-Adresse, auch zur Schätzung Ihres ungefähren Standorts,</li>
+    <li>die Werbe-ID und die App-Set-ID,</li>
+    <li>Interaktionen mit der App und der Anzeige (Start der App, Antippen, Videoaufrufe),</li>
+    <li>Diagnosedaten (zum Beispiel Startzeit und Leistung).</li>
+  </ul>
+  <p>Zwecke: Auslieferung und Messung von Anzeigen, Analyse und Betrugsprävention. Die Daten werden verschlüsselt übertragen. Von Google erhalten wir nur aggregierte Statistiken (etwa die Zahl der ausgelieferten Anzeigen), ohne Daten, die Sie identifizieren.</p>
+  <p><strong>Einwilligung.</strong> Im Europäischen Wirtschaftsraum, im Vereinigten Königreich und in der Schweiz erscheint vor der ersten Anzeige das Einwilligungsformular von Google. Sie können Ihre Wahl jederzeit ändern: Einstellungen → „Datenschutzeinstellungen für Werbung“. Wenn Sie nicht einwilligen, kann Google nicht personalisierte oder eingeschränkte Werbung zeigen. Das Einwilligungsmodul von Google speichert Ihre Wahl auf dem Gerät.</p>
+  <p><strong>Keine Sperre.</strong> Wenn keine Anzeige gezeigt werden kann (keine Einwilligung, keine Verbindung, keine Anzeige verfügbar), zeigt die App eine Karte zu unserer App M31 Edu Arabic (Abschnitt 07) und schaltet die Funktionen dennoch frei.</p>
+  <p><strong>Werbe-ID.</strong> Sie können sie in den Android-Einstellungen zurücksetzen oder löschen (Datenschutz → Werbung, oder Google → Werbung).</p>
+  <p><strong>Anzeigeninhalte</strong> sind auf die Altersfreigabe „PG“ von Google beschränkt.</p>
+  <p><strong>Rechtsgrundlage</strong> (DSGVO, UK-DSGVO, schweizerisches Datenschutzgesetz): Ihre Einwilligung, wo sie erforderlich ist; andernfalls unser berechtigtes Interesse an der Finanzierung der kostenlosen Version und an der Betrugsprävention.</p>
+  <p>Mehr: <a href="https://policies.google.com/technologies/partner-sites?hl=de">Wie Google Daten von Websites und Apps verwendet, die seine Dienste nutzen</a> · <a href="https://policies.google.com/privacy?hl=de">Datenschutzerklärung von Google</a>.</p>
+
+  <h3><span class="num">07</span>Bewerbung unserer eigenen App</h3>
+  <p>Wenn Google keine Anzeige hat, zeigt die App eine Karte zu unserer App M31 Edu Arabic. „Im Store ansehen“ öffnet Google Play. Die App übermittelt dabei keine Daten.</p>
+
+  <h3><span class="num">08</span>Was die App nicht tut</h3>
+  <ul>
+    <li>kein Nutzerkonto, keine Anmeldung,</li>
+    <li>erhebt keinen Namen, keine E-Mail-Adresse und keine Telefonnummer — Ihr Vorname bleibt, wenn Sie ihn eingeben, auf dem Gerät,</li>
+    <li>ermittelt Ihren Standort nicht (nur Google kann in der Version mit Werbung aus der IP-Adresse einen ungefähren Standort schätzen, Abschnitt 06),</li>
+    <li>hat keine eigene Analyse, keine Nutzungsstatistik und keine Fehlerberichte,</li>
+    <li>zeigt niemals von sich aus Werbung und auf iPhone, iPad und Mac überhaupt keine,</li>
+    <li>hat keinen Chat, keine von Nutzern eingestellten Inhalte und keine Bestenlisten,</li>
+    <li>verkauft keine Daten und gibt keine an Dritte weiter; die einzige Ausnahme ist das Werbemodul von Google in der kostenlosen Android-Version (Abschnitt 06).</li>
+  </ul>
+
+  <h3><span class="num">09</span>Kinder</h3>
+  <p>M31 Edu Cube 2D ist ein Lernpuzzle. Die kostenlose Android-Version, in der eine Anzeige erscheinen kann, richtet sich nicht an Kinder unter 13 Jahren, und die Anzeigeninhalte sind beschränkt (Abschnitt 06). Die Version für iPhone, iPad und Mac enthält keine Werbung und erhebt keine Daten. Wir erheben nicht wissentlich personenbezogene Daten von Kindern. Käufe wickelt der Store ab, der seine eigene Kindersicherung anwendet.</p>
+
+  <h3><span class="num">10</span>Ihre Rechte</h3>
+  <p>Nach der DSGVO, der UK-DSGVO und dem schweizerischen Datenschutzgesetz haben Sie das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch sowie das Recht, Beschwerde bei einer Datenschutzbehörde einzulegen. Ihre Einwilligung in Werbung können Sie jederzeit widerrufen: Einstellungen → „Datenschutzeinstellungen für Werbung“.</p>
+  <p>Wir selbst halten keine personenbezogenen Daten über Sie, also gibt es nichts, was wir offenlegen, berichtigen oder löschen könnten. Werbedaten verarbeitet Google — verwalten können Sie sie in <a href="https://myadcenter.google.com/?hl=de">Mein Anzeigencenter</a>. Die von der App gespeicherten Daten steuern Sie über die Einstellungen Ihres Geräts. Bei Datenschutzfragen schreiben Sie an die Kontaktadresse.</p>
+
+  <h3><span class="num">11</span>Änderungen dieser Erklärung</h3>
+  <p>Diese Fassung der Erklärung umfasst die Werbung in der Android-Version (ab App-Version 1.0.001). Wenn sich das Verhalten der App erneut ändert, aktualisieren wir diese Seite und das Datum „Gültig ab“ oben.</p>
+
+</section>
+
+<!-- ══════════════════ ENGLISH ══════════════════ -->
+
+<section class="lang" id="en" lang="en">
+  <h2>Privacy Policy</h2>
+
+  <div class="core">
+    <p><strong>We have no accounts and no server of our own, and we do not collect your personal data.</strong> The iPhone, iPad and Mac version contains no advertising and no analytics.</p>
+    <p>The free Android version shows a Google AdMob ad <strong>only when you choose to watch one</strong>. Google processes the data described in section 06 for this. With Premium there are no ads.</p>
+  </div>
+
+  <h3><span class="num">01</span>Who is responsible</h3>
+  <p>The app “M31 Edu Cube 2D” (identifier <code>ch.m31.edu.cube2d</code>) is published by Neuron M31 (Andrzej Węgrzyn). For privacy matters, write to the address given at the top of this page.</p>
+
+  <h3><span class="num">02</span>Permissions</h3>
+  <p>The app does not ask for access to your microphone, camera, contacts, photos, files or location, and shows no system permission prompts. The Android version has ordinary permissions that are granted without asking: vibration, internet access, Google Play purchases and — for the Google ad module — the advertising ID. Details are in sections 04 and 06.</p>
+
+  <h3><span class="num">03</span>Data on your device</h3>
+  <p>The app stores <strong>on your device</strong>: the language you chose, your first name (if you enter it — used only for the greeting in the app), an installation ID (made from the language code and the time of the first start; it is shown under “About” so that you can quote it when you contact us), settings, the game in progress, your cube designs, the free-version limit counters and whether Premium is active. The app sends none of this anywhere, and we have no access to it.</p>
+  <p>If you have Android Backup (Auto Backup) enabled, Android may copy this data to your Google account; on iOS the same can happen through an iCloud backup of your device. That happens within Google’s or Apple’s services, under their privacy policies, and remains under your control — you can turn it off in your device settings.</p>
+  <p>Uninstalling the app deletes the stored data. You can also reset it by clearing the app’s data in system settings.</p>
+
+  <h3><span class="num">04</span>In-app purchases</h3>
+  <p>Premium is a one-time purchase made through the billing system of Google Play (Android) or the App Store (iPhone, iPad, Mac). The store handles the entire purchase — the app <strong>never sees or stores</strong> card details, billing addresses or any other payment information. It only asks the store whether Premium belongs to the account signed in on the device and stores that answer locally. The stores send us sales reports (for example order number, date, country and price), which we need for accounting and refunds.</p>
+  <p>Premium bought in the App Store works on all your iPhone, iPad and Mac devices signed in with the same Apple Account. Purchases do not transfer between Google Play and the App Store.</p>
+  <p>The app connects to the internet for two purposes only: to handle purchases through the store and — only in the free Android version — to show an ad (section 06).</p>
+
+  <h3><span class="num">05</span>Challenges</h3>
+  <p>A challenge is a short code (16 characters, or 24 in free play; it starts with <code>M31</code>) that describes a scrambled cube: its size, colour arrangement, net and number of moves. It contains no name, no account, no device identifier and no free text. The app does not send codes to any server.</p>
+  <p>When you share a challenge, you choose how: with your device’s share function or by copying the code. The service you pick (a messenger, e-mail, etc.) handles the message under its own privacy policy.</p>
+  <p>You receive a challenge by typing the code or using “Paste from clipboard” — the app reads the clipboard only when you tap that button. Nothing is sent back to the sender.</p>
+
+  <h3><span class="num">06</span>Advertising — free Android version only</h3>
+  <p><strong>When.</strong> The Google ad module runs only in the free Android version, after the trial period. During the trial, with Premium and in the iPhone, iPad and Mac version there are no ads.</p>
+  <p><strong>How.</strong> It is a rewarded ad: it appears only after you tap “Watch an ad” and, once watched, unlocks extra features for 10 minutes. The app never shows ads on its own. So that the ad can start without waiting, the module loads it in advance — Google may therefore process data even if you never watch an ad.</p>
+  <p><strong>Who.</strong> Google AdMob — Google Ireland Limited for users in the European Economic Area and Switzerland, Google LLC elsewhere.</p>
+  <p><strong>What data.</strong> Google may process:</p>
+  <ul>
+    <li>your IP address, also to estimate your approximate location,</li>
+    <li>the advertising ID and the app set ID,</li>
+    <li>interactions with the app and the ad (app start, taps, video views),</li>
+    <li>diagnostic data (for example launch time and performance).</li>
+  </ul>
+  <p>Purposes: showing and measuring ads, analytics and fraud prevention. The data is transmitted encrypted. From Google we receive only aggregated statistics (such as the number of ads shown), with no data that identifies you.</p>
+  <p><strong>Consent.</strong> In the European Economic Area, the United Kingdom and Switzerland, Google’s consent form appears before the first ad. You can change your choice at any time: Settings → “Ad privacy settings”. If you do not consent, Google may show non-personalised or limited ads. Google’s consent module stores your choice on the device.</p>
+  <p><strong>No lock-out.</strong> If no ad can be shown (no consent, no connection, no ad available), the app shows a card about our app M31 Edu Arabic (section 07) and unlocks the features anyway.</p>
+  <p><strong>Advertising ID.</strong> You can reset or delete it in the Android settings (Privacy → Ads, or Google → Ads).</p>
+  <p><strong>Ad content</strong> is limited to Google’s “PG” maturity rating.</p>
+  <p><strong>Legal basis</strong> (GDPR, UK GDPR, Swiss Federal Act on Data Protection): your consent where it is required; otherwise our legitimate interest in financing the free version and in preventing fraud.</p>
+  <p>More: <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use its services</a> · <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+
+  <h3><span class="num">07</span>Promotion of our own app</h3>
+  <p>When Google has no ad, the app shows a card about our app M31 Edu Arabic. “View in store” opens Google Play. The app passes no data on when doing so.</p>
+
+  <h3><span class="num">08</span>What the app does not do</h3>
+  <ul>
+    <li>no user account, no sign-in,</li>
+    <li>collects no name, email address or phone number — your first name, if you enter it, stays on the device,</li>
+    <li>does not determine your location (only Google may estimate an approximate location from the IP address in the version with ads, section 06),</li>
+    <li>has no analytics, usage statistics or crash reporting of its own,</li>
+    <li>never shows ads on its own, and none at all on iPhone, iPad and Mac,</li>
+    <li>has no chat, no user-submitted content and no leaderboards,</li>
+    <li>sells no data and shares none with third parties; the only exception is the Google ad module in the free Android version (section 06).</li>
+  </ul>
+
+  <h3><span class="num">09</span>Children</h3>
+  <p>M31 Edu Cube 2D is an educational puzzle. The free Android version, which can show an ad, is not directed at children under 13, and ad content is limited (section 06). The iPhone, iPad and Mac version contains no ads and collects no data. We do not knowingly collect personal data from children. Purchases are handled by the store, which applies its own parental controls.</p>
+
+  <h3><span class="num">10</span>Your rights</h3>
+  <p>Under the GDPR, the UK GDPR and the Swiss Federal Act on Data Protection you have the right to access, rectification, erasure, restriction of processing, data portability and objection, and the right to lodge a complaint with a data protection authority. You can withdraw your consent to ads at any time in Settings → “Ad privacy settings”.</p>
+  <p>We hold no personal data about you ourselves, so there is nothing we could disclose, correct or delete. Advertising data is processed by Google — you can manage it in <a href="https://myadcenter.google.com/">My Ad Center</a>. You control the data stored by the app through your device settings. If you have any privacy questions, write to the contact address.</p>
+
+  <h3><span class="num">11</span>Changes to this policy</h3>
+  <p>This version of the policy covers advertising in the Android version (from app version 1.0.001). If the app’s behaviour changes again, we will update this page and the “Valid from” date at the top.</p>
+
+</section>
+
+<!-- ══════════════════ ESPAÑOL ══════════════════ -->
+
+<section class="lang" id="es" lang="es">
+  <h2>Política de privacidad</h2>
+
+  <div class="core">
+    <p><strong>No tenemos cuentas ni servidor propio, y no recogemos sus datos personales.</strong> La versión para iPhone, iPad y Mac no contiene publicidad ni herramientas analíticas.</p>
+    <p>La versión gratuita para Android muestra un anuncio de Google AdMob <strong>solo cuando usted decide verlo</strong>. Para ello, Google trata los datos descritos en el apartado 06. Con Premium no hay anuncios.</p>
+  </div>
+
+  <h3><span class="num">01</span>Quién es responsable</h3>
+  <p>La aplicación «M31 Edu Cube 2D» (identificador <code>ch.m31.edu.cube2d</code>) está publicada por Neuron M31 (Andrzej Węgrzyn). Para cuestiones de privacidad, escriba a la dirección indicada al principio de esta página.</p>
+
+  <h3><span class="num">02</span>Permisos</h3>
+  <p>La aplicación no solicita acceso al micrófono, la cámara, los contactos, las fotos, los archivos ni la ubicación, y no muestra solicitudes de permisos del sistema. La versión para Android tiene permisos ordinarios, concedidos sin preguntar: vibración, acceso a internet, compras en Google Play y —para el módulo de anuncios de Google— el identificador de publicidad. Los detalles están en los apartados 04 y 06.</p>
+
+  <h3><span class="num">03</span>Datos en su dispositivo</h3>
+  <p>La aplicación guarda <strong>en su dispositivo</strong>: el idioma elegido, su nombre (si lo introduce: sirve únicamente para el saludo dentro de la aplicación), un identificador de instalación (formado por el código de idioma y la hora del primer inicio; aparece en «Acerca de la aplicación» para que pueda indicarlo cuando se ponga en contacto con nosotros), los ajustes, la partida en curso, sus diseños del cubo, los contadores de los límites de la versión gratuita y si Premium está activo. La aplicación no envía nada de esto a ningún sitio y nosotros no tenemos acceso a ello.</p>
+  <p>Si tiene activada la Copia de seguridad de Android (Auto Backup), Android puede copiar estos datos a su cuenta de Google; en iOS lo mismo puede ocurrir a través de una copia de seguridad de iCloud de su dispositivo. Esto sucede dentro de los servicios de Google o de Apple, conforme a sus políticas de privacidad, y permanece bajo su control: puede desactivarlo en los ajustes del dispositivo.</p>
+  <p>Desinstalar la aplicación borra los datos guardados. También puede restablecerlos borrando los datos de la aplicación en los ajustes del sistema.</p>
+
+  <h3><span class="num">04</span>Compras en la aplicación</h3>
+  <p>Premium es una compra única realizada a través del sistema de facturación de Google Play (Android) o de la App Store (iPhone, iPad, Mac). La tienda gestiona la compra por completo: la aplicación <strong>nunca ve ni almacena</strong> datos de tarjetas, direcciones de facturación ni ninguna otra información de pago. Solo pregunta a la tienda si Premium pertenece a la cuenta con la que se ha iniciado sesión en el dispositivo y guarda esa respuesta localmente. Las tiendas nos envían informes de ventas (por ejemplo, número de pedido, fecha, país y precio) que necesitamos para la contabilidad y las devoluciones.</p>
+  <p>Premium comprado en la App Store funciona en todos sus dispositivos iPhone, iPad y Mac con la misma cuenta de Apple. Las compras no se transfieren entre Google Play y la App Store.</p>
+  <p>La aplicación se conecta a internet solo con dos fines: gestionar la compra a través de la tienda y —únicamente en la versión gratuita para Android— mostrar un anuncio (apartado 06).</p>
+
+  <h3><span class="num">05</span>Desafíos</h3>
+  <p>Un desafío es un código corto (16 caracteres, o 24 en el juego libre; empieza por <code>M31</code>) que describe un cubo mezclado: su tamaño, la disposición de los colores, el desarrollo plano y el número de movimientos. No contiene ningún nombre, ninguna cuenta, ningún identificador de dispositivo ni texto libre. La aplicación no envía los códigos a ningún servidor.</p>
+  <p>Cuando comparte un desafío, usted elige cómo: con la función de compartir de su dispositivo o copiando el código. El servicio que elija (una aplicación de mensajería, el correo electrónico, etc.) trata el mensaje según su propia política de privacidad.</p>
+  <p>Recibe un desafío escribiendo el código o mediante «Pegar del portapapeles»: la aplicación lee el portapapeles solo cuando usted toca ese botón. No se devuelve nada al remitente.</p>
+
+  <h3><span class="num">06</span>Publicidad — solo en la versión gratuita para Android</h3>
+  <p><strong>Cuándo.</strong> El módulo de anuncios de Google funciona solo en la versión gratuita para Android, una vez finalizado el periodo de prueba. Durante el periodo de prueba, con Premium y en la versión para iPhone, iPad y Mac no hay anuncios.</p>
+  <p><strong>Cómo.</strong> Es un anuncio con recompensa: aparece solo después de que usted toque «Ver un anuncio» y, una vez visto, desbloquea funciones adicionales durante 10 minutos. La aplicación nunca muestra anuncios por sí sola. Para que el anuncio pueda empezar sin espera, el módulo lo carga por adelantado; por eso Google puede tratar datos aunque usted no vea ningún anuncio.</p>
+  <p><strong>Quién.</strong> Google AdMob: Google Ireland Limited para los usuarios del Espacio Económico Europeo y Suiza, y Google LLC en el resto de países.</p>
+  <p><strong>Qué datos.</strong> Google puede tratar:</p>
+  <ul>
+    <li>su dirección IP, también para estimar su ubicación aproximada,</li>
+    <li>el identificador de publicidad y el identificador del conjunto de aplicaciones,</li>
+    <li>las interacciones con la aplicación y con el anuncio (inicio de la aplicación, toques, visualizaciones de vídeo),</li>
+    <li>datos de diagnóstico (por ejemplo, tiempo de inicio y rendimiento).</li>
+  </ul>
+  <p>Fines: mostrar y medir anuncios, análisis y prevención del fraude. Los datos se transmiten cifrados. De Google recibimos únicamente estadísticas agregadas (como el número de anuncios mostrados), sin datos que permitan identificarle.</p>
+  <p><strong>Consentimiento.</strong> En el Espacio Económico Europeo, el Reino Unido y Suiza, antes del primer anuncio aparece el formulario de consentimiento de Google. Puede cambiar su elección en cualquier momento: Ajustes → «Configuración de privacidad de los anuncios». Si no da su consentimiento, Google puede mostrar anuncios no personalizados o limitados. El módulo de consentimiento de Google guarda su elección en el dispositivo.</p>
+  <p><strong>Sin bloqueo.</strong> Si no se puede mostrar ningún anuncio (falta de consentimiento, de conexión o de anuncios disponibles), la aplicación muestra una tarjeta sobre nuestra aplicación M31 Edu Arabic (apartado 07) y desbloquea las funciones de todos modos.</p>
+  <p><strong>Identificador de publicidad.</strong> Puede restablecerlo o eliminarlo en los ajustes de Android (Privacidad → Anuncios, o Google → Anuncios).</p>
+  <p><strong>El contenido de los anuncios</strong> está limitado a la clasificación de madurez «PG» de Google.</p>
+  <p><strong>Base jurídica</strong> (RGPD, RGPD del Reino Unido, Ley Federal suiza de Protección de Datos): su consentimiento cuando sea necesario; en los demás casos, nuestro interés legítimo en financiar la versión gratuita y en prevenir el fraude.</p>
+  <p>Más información: <a href="https://policies.google.com/technologies/partner-sites?hl=es">Cómo utiliza Google la información de sitios web o aplicaciones que usan sus servicios</a> · <a href="https://policies.google.com/privacy?hl=es">Política de Privacidad de Google</a>.</p>
+
+  <h3><span class="num">07</span>Promoción de nuestra propia aplicación</h3>
+  <p>Cuando Google no tiene ningún anuncio, la aplicación muestra una tarjeta sobre nuestra aplicación M31 Edu Arabic. «Ver en la tienda» abre Google Play. La aplicación no transmite ningún dato al hacerlo.</p>
+
+  <h3><span class="num">08</span>Lo que la aplicación no hace</h3>
+  <ul>
+    <li>no crea cuenta de usuario ni requiere inicio de sesión,</li>
+    <li>no recoge nombre, dirección de correo electrónico ni número de teléfono: su nombre, si lo introduce, permanece en el dispositivo,</li>
+    <li>no determina su ubicación (solo Google puede estimar una ubicación aproximada a partir de la dirección IP en la versión con anuncios, apartado 06),</li>
+    <li>no tiene analítica propia, estadísticas de uso ni informes de errores,</li>
+    <li>nunca muestra anuncios por sí sola, y en iPhone, iPad y Mac no muestra ninguno,</li>
+    <li>no tiene chat, contenidos creados por los usuarios ni clasificaciones,</li>
+    <li>no vende datos ni los comparte con terceros; la única excepción es el módulo de anuncios de Google en la versión gratuita para Android (apartado 06).</li>
+  </ul>
+
+  <h3><span class="num">09</span>Menores</h3>
+  <p>M31 Edu Cube 2D es un rompecabezas educativo. La versión gratuita para Android, en la que puede aparecer un anuncio, no está dirigida a menores de 13 años, y el contenido de los anuncios está limitado (apartado 06). La versión para iPhone, iPad y Mac no contiene publicidad y no recoge ningún dato. No recogemos a sabiendas datos personales de menores. Las compras las gestiona la tienda, que aplica sus propios controles parentales.</p>
+
+  <h3><span class="num">10</span>Sus derechos</h3>
+  <p>En virtud del RGPD, del RGPD del Reino Unido y de la Ley Federal suiza de Protección de Datos, tiene derecho de acceso, rectificación, supresión, limitación del tratamiento, portabilidad de los datos y oposición, así como derecho a presentar una reclamación ante una autoridad de protección de datos. Puede retirar su consentimiento para los anuncios en cualquier momento en Ajustes → «Configuración de privacidad de los anuncios».</p>
+  <p>Nosotros mismos no conservamos ningún dato personal suyo, por lo que no hay nada que pudiéramos facilitar, corregir o borrar. Los datos publicitarios los trata Google: puede gestionarlos en <a href="https://myadcenter.google.com/?hl=es">Mi Centro de Anuncios</a>. Los datos guardados por la aplicación los controla a través de los ajustes de su dispositivo. Si tiene alguna pregunta sobre privacidad, escriba a la dirección de contacto.</p>
+
+  <h3><span class="num">11</span>Cambios en esta política</h3>
+  <p>Esta versión de la política cubre la publicidad en la versión para Android (desde la versión 1.0.001 de la aplicación). Si el comportamiento de la aplicación vuelve a cambiar, actualizaremos esta página y la fecha «Vigente desde» del encabezado.</p>
+
+</section>
+
+<!-- ══════════════════ FRANÇAIS ══════════════════ -->
+
+<section class="lang" id="fr" lang="fr">
+  <h2>Politique de confidentialité</h2>
+
+  <div class="core">
+    <p><strong>Nous n’avons ni comptes ni serveur propre, et nous ne collectons pas vos données personnelles.</strong> La version pour iPhone, iPad et Mac ne contient aucune publicité ni outil d’analyse.</p>
+    <p>La version gratuite pour Android affiche une annonce Google AdMob <strong>uniquement lorsque vous choisissez de la regarder</strong>. Google traite alors les données décrites au point 06. Avec Premium, il n’y a pas de publicité.</p>
+  </div>
+
+  <h3><span class="num">01</span>Qui est responsable</h3>
+  <p>L’application « M31 Edu Cube 2D » (identifiant <code>ch.m31.edu.cube2d</code>) est publiée par Neuron M31 (Andrzej Węgrzyn). Pour toute question de confidentialité, écrivez à l’adresse indiquée en haut de cette page.</p>
+
+  <h3><span class="num">02</span>Autorisations</h3>
+  <p>L’application ne demande pas l’accès à votre microphone, votre appareil photo, vos contacts, vos photos, vos fichiers ni votre position, et n’affiche aucune demande d’autorisation système. La version Android dispose d’autorisations ordinaires, accordées sans demande : vibration, accès à internet, achats via Google Play et — pour le module publicitaire de Google — l’identifiant publicitaire. Les détails figurent aux points 04 et 06.</p>
+
+  <h3><span class="num">03</span>Données sur votre appareil</h3>
+  <p>L’application enregistre <strong>sur votre appareil</strong> : la langue choisie, votre prénom (si vous le saisissez — il ne sert qu’au message d’accueil dans l’application), un identifiant d’installation (constitué du code de langue et de l’heure du premier lancement ; il s’affiche dans « À propos » afin que vous puissiez l’indiquer lorsque vous nous contactez), les réglages, la partie en cours, vos modèles de cube, les compteurs de limites de la version gratuite et l’information indiquant si Premium est actif. L’application n’envoie rien de tout cela où que ce soit, et nous n’y avons pas accès.</p>
+  <p>Si la Sauvegarde Android (Auto Backup) est activée, Android peut copier ces données vers votre compte Google ; sous iOS, la même chose peut se produire via une sauvegarde iCloud de votre appareil. Cela se passe au sein des services de Google ou d’Apple, selon leurs politiques de confidentialité, et reste sous votre contrôle — vous pouvez le désactiver dans les réglages de votre appareil.</p>
+  <p>La désinstallation de l’application supprime les données enregistrées. Vous pouvez également les réinitialiser en effaçant les données de l’application dans les réglages du système.</p>
+
+  <h3><span class="num">04</span>Achats dans l’application</h3>
+  <p>Premium est un achat unique effectué via le système de facturation de Google Play (Android) ou de l’App Store (iPhone, iPad, Mac). La boutique gère l’intégralité de l’achat — l’application <strong>ne voit ni ne conserve</strong> aucune donnée de carte, adresse de facturation ou autre information de paiement. Elle demande seulement à la boutique si Premium appartient au compte connecté sur l’appareil et enregistre cette réponse localement. Les boutiques nous transmettent des rapports de ventes (par exemple numéro de commande, date, pays et prix), dont nous avons besoin pour la comptabilité et les remboursements.</p>
+  <p>Premium acheté sur l’App Store fonctionne sur tous vos appareils iPhone, iPad et Mac connectés avec le même compte Apple. Les achats ne sont pas transférables entre Google Play et l’App Store.</p>
+  <p>L’application se connecte à internet à deux fins seulement : traiter un achat via la boutique et — uniquement dans la version gratuite pour Android — afficher une annonce (point 06).</p>
+
+  <h3><span class="num">05</span>Défis</h3>
+  <p>Un défi est un code court (16 caractères, ou 24 en jeu libre ; il commence par <code>M31</code>) qui décrit un cube mélangé : sa taille, la disposition des couleurs, le patron et le nombre de mouvements. Il ne contient aucun nom, aucun compte, aucun identifiant d’appareil ni texte libre. L’application n’envoie les codes à aucun serveur.</p>
+  <p>Lorsque vous partagez un défi, vous choisissez comment : avec la fonction de partage de votre appareil ou en copiant le code. Le service que vous choisissez (une messagerie, un e-mail, etc.) traite le message selon sa propre politique de confidentialité.</p>
+  <p>Vous recevez un défi en saisissant le code ou à l’aide de « Coller depuis le presse-papiers » — l’application ne lit le presse-papiers que lorsque vous appuyez sur ce bouton. Rien n’est renvoyé à l’expéditeur.</p>
+
+  <h3><span class="num">06</span>Publicité — uniquement dans la version gratuite pour Android</h3>
+  <p><strong>Quand.</strong> Le module publicitaire de Google ne fonctionne que dans la version gratuite pour Android, après la fin de la période d’essai. Pendant la période d’essai, avec Premium et dans la version pour iPhone, iPad et Mac, il n’y a pas de publicité.</p>
+  <p><strong>Comment.</strong> Il s’agit d’une annonce avec récompense : elle n’apparaît qu’après que vous avez appuyé sur « Regarder une annonce » et, une fois regardée, débloque des fonctions supplémentaires pendant 10 minutes. L’application n’affiche jamais de publicité d’elle-même. Pour que l’annonce puisse démarrer sans attente, le module la charge à l’avance — Google peut donc traiter des données même si vous ne regardez aucune annonce.</p>
+  <p><strong>Qui.</strong> Google AdMob — Google Ireland Limited pour les utilisateurs de l’Espace économique européen et de la Suisse, Google LLC ailleurs.</p>
+  <p><strong>Quelles données.</strong> Google peut traiter :</p>
+  <ul>
+    <li>votre adresse IP, notamment pour estimer votre position approximative,</li>
+    <li>l’identifiant publicitaire et l’identifiant d’ensemble d’applications,</li>
+    <li>les interactions avec l’application et l’annonce (lancement de l’application, appuis, visionnages de vidéos),</li>
+    <li>des données de diagnostic (par exemple temps de lancement et performances).</li>
+  </ul>
+  <p>Finalités : diffusion et mesure des annonces, analyse et prévention de la fraude. Les données sont transmises de façon chiffrée. De Google, nous ne recevons que des statistiques agrégées (comme le nombre d’annonces diffusées), sans données permettant de vous identifier.</p>
+  <p><strong>Consentement.</strong> Dans l’Espace économique européen, au Royaume-Uni et en Suisse, le formulaire de consentement de Google apparaît avant la première annonce. Vous pouvez modifier votre choix à tout moment : Réglages → « Paramètres de confidentialité des annonces ». Si vous ne consentez pas, Google peut diffuser des annonces non personnalisées ou limitées. Le module de consentement de Google enregistre votre choix sur l’appareil.</p>
+  <p><strong>Aucun blocage.</strong> Si aucune annonce ne peut être diffusée (absence de consentement, de connexion ou d’annonce disponible), l’application affiche une carte présentant notre application M31 Edu Arabic (point 07) et débloque malgré tout les fonctions.</p>
+  <p><strong>Identifiant publicitaire.</strong> Vous pouvez le réinitialiser ou le supprimer dans les réglages d’Android (Confidentialité → Annonces, ou Google → Annonces).</p>
+  <p><strong>Le contenu des annonces</strong> est limité à la classification de maturité « PG » de Google.</p>
+  <p><strong>Base juridique</strong> (RGPD, RGPD britannique, loi fédérale suisse sur la protection des données) : votre consentement là où il est requis ; sinon, notre intérêt légitime à financer la version gratuite et à prévenir la fraude.</p>
+  <p>Plus d’informations : <a href="https://policies.google.com/technologies/partner-sites?hl=fr">Comment Google utilise les informations provenant de sites ou d’applications qui font appel à ses services</a> · <a href="https://policies.google.com/privacy?hl=fr">Règles de confidentialité de Google</a>.</p>
+
+  <h3><span class="num">07</span>Promotion de notre propre application</h3>
+  <p>Lorsque Google n’a aucune annonce, l’application affiche une carte présentant notre application M31 Edu Arabic. « Voir dans la boutique » ouvre Google Play. L’application ne transmet alors aucune donnée.</p>
+
+  <h3><span class="num">08</span>Ce que l’application ne fait pas</h3>
+  <ul>
+    <li>aucun compte utilisateur, aucune connexion,</li>
+    <li>ne collecte ni nom, ni adresse e-mail, ni numéro de téléphone — votre prénom, si vous le saisissez, reste sur l’appareil,</li>
+    <li>ne détermine pas votre position (seul Google peut estimer une position approximative à partir de l’adresse IP dans la version avec publicité, point 06),</li>
+    <li>n’a ni analyse propre, ni statistiques d’utilisation, ni rapports d’erreurs,</li>
+    <li>n’affiche jamais de publicité d’elle-même, et aucune sur iPhone, iPad et Mac,</li>
+    <li>n’a ni messagerie, ni contenus publiés par les utilisateurs, ni classements,</li>
+    <li>ne vend aucune donnée et n’en partage aucune avec des tiers ; la seule exception est le module publicitaire de Google dans la version gratuite pour Android (point 06).</li>
+  </ul>
+
+  <h3><span class="num">09</span>Enfants</h3>
+  <p>M31 Edu Cube 2D est un casse-tête éducatif. La version gratuite pour Android, dans laquelle une annonce peut apparaître, n’est pas destinée aux enfants de moins de 13 ans, et le contenu des annonces est limité (point 06). La version pour iPhone, iPad et Mac ne contient aucune publicité et ne collecte aucune donnée. Nous ne collectons pas sciemment de données personnelles d’enfants. Les achats sont gérés par la boutique, qui applique son propre contrôle parental.</p>
+
+  <h3><span class="num">10</span>Vos droits</h3>
+  <p>En vertu du RGPD, du RGPD britannique et de la loi fédérale suisse sur la protection des données, vous disposez d’un droit d’accès, de rectification, d’effacement, de limitation du traitement, de portabilité des données et d’opposition, ainsi que du droit d’introduire une réclamation auprès d’une autorité de protection des données. Vous pouvez retirer votre consentement à la publicité à tout moment dans Réglages → « Paramètres de confidentialité des annonces ».</p>
+  <p>Nous ne détenons nous-mêmes aucune donnée personnelle vous concernant ; il n’y a donc rien que nous puissions communiquer, corriger ou supprimer. Les données publicitaires sont traitées par Google — vous pouvez les gérer dans <a href="https://myadcenter.google.com/?hl=fr">Mon centre de publicité</a>. Vous contrôlez les données enregistrées par l’application via les réglages de votre appareil. Pour toute question de confidentialité, écrivez à l’adresse de contact.</p>
+
+  <h3><span class="num">11</span>Modifications de la présente politique</h3>
+  <p>Cette version de la politique couvre la publicité dans la version Android (à partir de la version 1.0.001 de l’application). Si le comportement de l’application change à nouveau, nous mettrons à jour cette page ainsi que la date « En vigueur depuis » figurant en haut.</p>
+
+</section>
+
+<!-- ══════════════════ ITALIANO ══════════════════ -->
+
+<section class="lang" id="it" lang="it">
+  <h2>Informativa sulla privacy</h2>
+
+  <div class="core">
+    <p><strong>Non abbiamo account né un server nostro, e non raccogliamo i Suoi dati personali.</strong> La versione per iPhone, iPad e Mac non contiene pubblicità né strumenti di analisi.</p>
+    <p>La versione gratuita per Android mostra un annuncio Google AdMob <strong>solo quando Lei sceglie di guardarlo</strong>. Per questo Google tratta i dati descritti al punto 06. Con Premium non ci sono annunci.</p>
+  </div>
+
+  <h3><span class="num">01</span>Chi è responsabile</h3>
+  <p>L’applicazione «M31 Edu Cube 2D» (identificativo <code>ch.m31.edu.cube2d</code>) è pubblicata da Neuron M31 (Andrzej Węgrzyn). Per questioni relative alla privacy scriva all’indirizzo indicato all’inizio di questa pagina.</p>
+
+  <h3><span class="num">02</span>Autorizzazioni</h3>
+  <p>L’applicazione non chiede accesso al microfono, alla fotocamera, ai contatti, alle foto, ai file o alla posizione, e non mostra richieste di autorizzazione di sistema. La versione per Android ha autorizzazioni ordinarie, concesse senza richiesta: vibrazione, accesso a internet, acquisti su Google Play e — per il modulo pubblicitario di Google — l’ID pubblicità. I dettagli sono ai punti 04 e 06.</p>
+
+  <h3><span class="num">03</span>Dati sul Suo dispositivo</h3>
+  <p>L’applicazione salva <strong>sul Suo dispositivo</strong>: la lingua scelta, il Suo nome (se lo inserisce — serve solo per il saluto nell’applicazione), un identificativo di installazione (formato dal codice della lingua e dall’ora del primo avvio; è visibile in «Informazioni sull’app» perché Lei possa indicarlo quando ci contatta), le impostazioni, la partita in corso, i Suoi progetti del cubo, i contatori dei limiti della versione gratuita e l’informazione se Premium è attivo. L’applicazione non invia nulla di tutto questo da nessuna parte e noi non abbiamo accesso a questi dati.</p>
+  <p>Se ha attivato il Backup di Android (Auto Backup), Android può copiare questi dati sul Suo account Google; su iOS lo stesso può avvenire tramite un backup iCloud del dispositivo. Ciò accade all’interno dei servizi di Google o di Apple, secondo le loro informative sulla privacy, e resta sotto il Suo controllo: può disattivarlo nelle impostazioni del dispositivo.</p>
+  <p>La disinstallazione dell’applicazione elimina i dati salvati. Può anche azzerarli cancellando i dati dell’applicazione nelle impostazioni di sistema.</p>
+
+  <h3><span class="num">04</span>Acquisti nell’applicazione</h3>
+  <p>Premium è un acquisto una tantum effettuato tramite il sistema di pagamento di Google Play (Android) o dell’App Store (iPhone, iPad, Mac). L’intero acquisto è gestito dallo store — l’applicazione <strong>non vede e non conserva</strong> dati della carta, indirizzi di fatturazione o altre informazioni di pagamento. Chiede allo store soltanto se Premium appartiene all’account con cui si è effettuato l’accesso sul dispositivo e salva questa risposta in locale. Gli store ci trasmettono rendiconti di vendita (per esempio numero d’ordine, data, paese e prezzo), che ci servono per la contabilità e i rimborsi.</p>
+  <p>Premium acquistato nell’App Store funziona su tutti i Suoi dispositivi iPhone, iPad e Mac collegati con lo stesso account Apple. Gli acquisti non si trasferiscono tra Google Play e App Store.</p>
+  <p>L’applicazione si connette a internet solo per due scopi: gestire un acquisto tramite lo store e — soltanto nella versione gratuita per Android — mostrare un annuncio (punto 06).</p>
+
+  <h3><span class="num">05</span>Sfide</h3>
+  <p>Una sfida è un codice breve (16 caratteri, 24 nel gioco libero; inizia con <code>M31</code>) che descrive un cubo mescolato: la dimensione, la disposizione dei colori, lo sviluppo piano e il numero di mosse. Non contiene nomi, account, identificativi del dispositivo né testo libero. L’applicazione non invia i codici a nessun server.</p>
+  <p>Quando condivide una sfida, Lei sceglie come: con la funzione di condivisione del dispositivo o copiando il codice. Il servizio che sceglie (un servizio di messaggistica, l’e-mail, ecc.) tratta il messaggio secondo la propria informativa sulla privacy.</p>
+  <p>Riceve una sfida digitando il codice oppure con «Incolla dagli appunti»: l’applicazione legge gli appunti solo quando Lei tocca quel pulsante. Al mittente non viene rinviato nulla.</p>
+
+  <h3><span class="num">06</span>Pubblicità — solo versione gratuita per Android</h3>
+  <p><strong>Quando.</strong> Il modulo pubblicitario di Google funziona solo nella versione gratuita per Android, dopo la fine del periodo di prova. Durante il periodo di prova, con Premium e nella versione per iPhone, iPad e Mac non c’è pubblicità.</p>
+  <p><strong>Come.</strong> Si tratta di un annuncio con premio: compare solo dopo che Lei ha toccato «Guarda un annuncio» e, una volta guardato, sblocca funzioni aggiuntive per 10 minuti. L’applicazione non mostra mai pubblicità da sola. Perché l’annuncio possa partire senza attesa, il modulo lo carica in anticipo — Google può quindi trattare dati anche se Lei non guarda alcun annuncio.</p>
+  <p><strong>Chi.</strong> Google AdMob — Google Ireland Limited per gli utenti dello Spazio economico europeo e della Svizzera, Google LLC altrove.</p>
+  <p><strong>Quali dati.</strong> Google può trattare:</p>
+  <ul>
+    <li>il Suo indirizzo IP, anche per stimare la Sua posizione approssimativa,</li>
+    <li>l’ID pubblicità e l’ID del set di app,</li>
+    <li>le interazioni con l’applicazione e con l’annuncio (avvio dell’app, tocchi, visualizzazioni video),</li>
+    <li>dati diagnostici (per esempio tempo di avvio e prestazioni).</li>
+  </ul>
+  <p>Finalità: pubblicazione e misurazione degli annunci, analisi e prevenzione delle frodi. I dati sono trasmessi in forma cifrata. Da Google riceviamo solo statistiche aggregate (come il numero di annunci mostrati), senza dati che La identifichino.</p>
+  <p><strong>Consenso.</strong> Nello Spazio economico europeo, nel Regno Unito e in Svizzera, prima del primo annuncio compare il modulo di consenso di Google. Può modificare la Sua scelta in qualsiasi momento: Impostazioni → «Impostazioni privacy per gli annunci». Se non acconsente, Google può mostrare annunci non personalizzati o limitati. Il modulo di consenso di Google salva la Sua scelta sul dispositivo.</p>
+  <p><strong>Nessun blocco.</strong> Se non è possibile mostrare alcun annuncio (manca il consenso, la connessione o un annuncio disponibile), l’applicazione mostra una scheda sulla nostra applicazione M31 Edu Arabic (punto 07) e sblocca comunque le funzioni.</p>
+  <p><strong>ID pubblicità.</strong> Può reimpostarlo o eliminarlo nelle impostazioni di Android (Privacy → Annunci, oppure Google → Annunci).</p>
+  <p><strong>Il contenuto degli annunci</strong> è limitato alla classificazione di maturità «PG» di Google.</p>
+  <p><strong>Base giuridica</strong> (GDPR, GDPR del Regno Unito, legge federale svizzera sulla protezione dei dati): il Suo consenso dove è richiesto; negli altri casi il nostro legittimo interesse a finanziare la versione gratuita e a prevenire le frodi.</p>
+  <p>Altro: <a href="https://policies.google.com/technologies/partner-sites?hl=it">Come Google utilizza le informazioni dei siti o delle app che usano i suoi servizi</a> · <a href="https://policies.google.com/privacy?hl=it">Norme sulla privacy di Google</a>.</p>
+
+  <h3><span class="num">07</span>Promozione della nostra applicazione</h3>
+  <p>Quando Google non ha annunci, l’applicazione mostra una scheda sulla nostra applicazione M31 Edu Arabic. «Vedi nello store» apre Google Play. L’applicazione non trasmette alcun dato nel farlo.</p>
+
+  <h3><span class="num">08</span>Che cosa l’applicazione non fa</h3>
+  <ul>
+    <li>nessun account utente, nessun accesso,</li>
+    <li>non raccoglie nome, indirizzo e-mail o numero di telefono — il Suo nome, se lo inserisce, resta sul dispositivo,</li>
+    <li>non determina la Sua posizione (solo Google può stimare una posizione approssimativa dall’indirizzo IP nella versione con pubblicità, punto 06),</li>
+    <li>non ha analisi proprie, statistiche d’uso o segnalazioni di errore,</li>
+    <li>non mostra mai pubblicità da sola, e su iPhone, iPad e Mac non ne mostra affatto,</li>
+    <li>non ha chat, contenuti caricati dagli utenti né classifiche,</li>
+    <li>non vende dati e non ne condivide con terzi; l’unica eccezione è il modulo pubblicitario di Google nella versione gratuita per Android (punto 06).</li>
+  </ul>
+
+  <h3><span class="num">09</span>Minori</h3>
+  <p>M31 Edu Cube 2D è un rompicapo didattico. La versione gratuita per Android, in cui può comparire un annuncio, non è destinata ai minori di 13 anni, e il contenuto degli annunci è limitato (punto 06). La versione per iPhone, iPad e Mac non contiene pubblicità e non raccoglie dati. Non raccogliamo consapevolmente dati personali di minori. Gli acquisti sono gestiti dallo store, che applica i propri controlli parentali.</p>
+
+  <h3><span class="num">10</span>I Suoi diritti</h3>
+  <p>In base al GDPR, al GDPR del Regno Unito e alla legge federale svizzera sulla protezione dei dati Lei ha diritto di accesso, rettifica, cancellazione, limitazione del trattamento, portabilità dei dati e opposizione, nonché il diritto di proporre reclamo a un’autorità di protezione dei dati. Può revocare in qualsiasi momento il consenso alla pubblicità in Impostazioni → «Impostazioni privacy per gli annunci».</p>
+  <p>Noi stessi non conserviamo alcun Suo dato personale, quindi non c’è nulla che potremmo comunicare, correggere o cancellare. I dati pubblicitari sono trattati da Google — può gestirli in <a href="https://myadcenter.google.com/?hl=it">Il mio centro annunci</a>. I dati salvati dall’applicazione li controlla tramite le impostazioni del dispositivo. Per domande sulla privacy scriva all’indirizzo di contatto.</p>
+
+  <h3><span class="num">11</span>Modifiche a questa informativa</h3>
+  <p>Questa versione dell’informativa riguarda la pubblicità nella versione per Android (dalla versione 1.0.001 dell’applicazione). Se il comportamento dell’applicazione cambierà di nuovo, aggiorneremo questa pagina e la data «In vigore dal» all’inizio.</p>
+
+</section>
+
 <!-- ══════════════════ MAGYAR ══════════════════ -->
+
 <section class="lang" id="hu" lang="hu">
   <h2>Adatvédelmi szabályzat</h2>
 
@@ -388,7 +713,84 @@
 
 </section>
 
+<!-- ══════════════════ NEDERLANDS ══════════════════ -->
+
+<section class="lang" id="nl" lang="nl">
+  <h2>Privacyverklaring</h2>
+
+  <div class="core">
+    <p><strong>Wij hebben geen accounts en geen eigen server, en wij verzamelen uw persoonsgegevens niet.</strong> De versie voor iPhone, iPad en Mac bevat geen advertenties en geen analyse-instrumenten.</p>
+    <p>De gratis Android-versie toont een Google AdMob-advertentie <strong>alleen wanneer u er zelf voor kiest er een te bekijken</strong>. Google verwerkt daarvoor de gegevens die in punt 06 staan beschreven. Met Premium zijn er geen advertenties.</p>
+  </div>
+
+  <h3><span class="num">01</span>Wie verantwoordelijk is</h3>
+  <p>De app „M31 Edu Cube 2D” (identificatie <code>ch.m31.edu.cube2d</code>) wordt uitgegeven door Neuron M31 (Andrzej Węgrzyn). Voor privacyzaken schrijft u naar het adres dat boven aan deze pagina staat.</p>
+
+  <h3><span class="num">02</span>Toestemmingen</h3>
+  <p>De app vraagt geen toegang tot uw microfoon, camera, contacten, foto’s, bestanden of locatie en toont geen systeemverzoeken om toestemming. De Android-versie heeft gewone rechten die zonder vraag worden verleend: trillen, internettoegang, aankopen via Google Play en — voor de advertentiemodule van Google — de advertentie-ID. Details staan in de punten 04 en 06.</p>
+
+  <h3><span class="num">03</span>Gegevens op uw toestel</h3>
+  <p>De app bewaart <strong>op uw toestel</strong>: de gekozen taal, uw voornaam (als u die invult — die dient alleen voor de begroeting in de app), een installatie-ID (samengesteld uit de taalcode en het tijdstip van de eerste start; het staat onder „Over de app” zodat u het kunt vermelden wanneer u contact met ons opneemt), de instellingen, het spel dat loopt, uw kubusontwerpen, de tellers voor de grenzen van de gratis versie en of Premium actief is. De app stuurt daarvan niets ergens naartoe, en wij hebben er geen toegang tot.</p>
+  <p>Als u Android-back-up (Auto Backup) hebt aangezet, kan Android deze gegevens naar uw Google-account kopiëren; op iOS kan hetzelfde gebeuren via een iCloud-back-up van uw toestel. Dat gebeurt binnen de diensten van Google of Apple, onder hun privacyverklaringen, en blijft onder uw controle — u kunt het uitzetten in de instellingen van uw toestel.</p>
+  <p>Het verwijderen van de app wist de bewaarde gegevens. U kunt ze ook terugzetten door de gegevens van de app in de systeeminstellingen te wissen.</p>
+
+  <h3><span class="num">04</span>Aankopen in de app</h3>
+  <p>Premium is een eenmalige aankoop via het betaalsysteem van Google Play (Android) of de App Store (iPhone, iPad, Mac). De store handelt de hele aankoop af — de app <strong>ziet en bewaart</strong> geen kaartgegevens, factuuradressen of andere betaalinformatie. Hij vraagt de store alleen of Premium bij het account hoort waarmee op het toestel is ingelogd, en bewaart dat antwoord lokaal. De stores sturen ons verkooprapporten (bijvoorbeeld ordernummer, datum, land en prijs), die wij nodig hebben voor de boekhouding en voor terugbetalingen.</p>
+  <p>Premium dat in de App Store is gekocht, werkt op al uw iPhone-, iPad- en Mac-toestellen die met hetzelfde Apple-account zijn ingelogd. Aankopen gaan niet over tussen Google Play en de App Store.</p>
+  <p>De app maakt alleen voor twee doelen verbinding met internet: om een aankoop via de store af te handelen en — uitsluitend in de gratis Android-versie — om een advertentie te tonen (punt 06).</p>
+
+  <h3><span class="num">05</span>Uitdagingen</h3>
+  <p>Een uitdaging is een korte code (16 tekens, of 24 in het vrije spel; hij begint met <code>M31</code>) die een door elkaar gedraaide kubus beschrijft: de maat, de kleurverdeling, de uitslag en het aantal zetten. Hij bevat geen naam, geen account, geen toestel-ID en geen vrije tekst. De app stuurt codes naar geen enkele server.</p>
+  <p>Wanneer u een uitdaging deelt, kiest u zelf hoe: met de deelfunctie van uw toestel of door de code te kopiëren. De dienst die u kiest (een berichtenapp, e-mail enzovoort) verwerkt het bericht onder zijn eigen privacyverklaring.</p>
+  <p>U ontvangt een uitdaging door de code te typen of met „Plakken vanaf klembord” — de app leest het klembord alleen wanneer u op die knop tikt. Er wordt niets naar de afzender teruggestuurd.</p>
+
+  <h3><span class="num">06</span>Advertenties — alleen de gratis Android-versie</h3>
+  <p><strong>Wanneer.</strong> De advertentiemodule van Google loopt alleen in de gratis Android-versie, na het einde van de proefperiode. Tijdens de proefperiode, met Premium en in de versie voor iPhone, iPad en Mac zijn er geen advertenties.</p>
+  <p><strong>Hoe.</strong> Het is een advertentie met beloning: hij verschijnt pas nadat u op „Advertentie bekijken” hebt getikt en ontgrendelt na het bekijken 10 minuten lang extra functies. De app toont nooit op eigen initiatief advertenties. Om de advertentie zonder wachten te kunnen starten, laadt de module hem vooraf — Google kan daarom gegevens verwerken, ook als u nooit een advertentie bekijkt.</p>
+  <p><strong>Wie.</strong> Google AdMob — Google Ireland Limited voor gebruikers in de Europese Economische Ruimte en Zwitserland, elders Google LLC.</p>
+  <p><strong>Welke gegevens.</strong> Google kan verwerken:</p>
+  <ul>
+    <li>uw IP-adres, ook om uw locatie bij benadering te schatten,</li>
+    <li>de advertentie-ID en de app-set-ID,</li>
+    <li>interacties met de app en met de advertentie (starten van de app, tikken, videoweergaven),</li>
+    <li>diagnostische gegevens (bijvoorbeeld opstarttijd en prestaties).</li>
+  </ul>
+  <p>Doelen: advertenties tonen en meten, analyse en fraudepreventie. De gegevens worden versleuteld doorgestuurd. Van Google ontvangen wij alleen samengevoegde statistieken (zoals het aantal getoonde advertenties), zonder gegevens die u identificeren.</p>
+  <p><strong>Toestemming.</strong> In de Europese Economische Ruimte, het Verenigd Koninkrijk en Zwitserland verschijnt vóór de eerste advertentie het toestemmingsformulier van Google. U kunt uw keuze altijd wijzigen: Instellingen → „Privacyinstellingen voor advertenties”. Als u geen toestemming geeft, kan Google niet-gepersonaliseerde of beperkte advertenties tonen. De toestemmingsmodule van Google bewaart uw keuze op het toestel.</p>
+  <p><strong>Geen blokkade.</strong> Wanneer er geen advertentie getoond kan worden (geen toestemming, geen verbinding, geen advertentie beschikbaar), toont de app een kaart over onze app M31 Edu Arabic (punt 07) en ontgrendelt de functies toch.</p>
+  <p><strong>Advertentie-ID.</strong> U kunt die opnieuw instellen of verwijderen in de Android-instellingen (Privacy → Advertenties, of Google → Advertenties).</p>
+  <p><strong>De inhoud van advertenties</strong> is beperkt tot de leeftijdsclassificatie „PG” van Google.</p>
+  <p><strong>Rechtsgrond</strong> (AVG, Britse AVG, Zwitserse federale wet op de gegevensbescherming): uw toestemming waar die vereist is; in de overige gevallen ons gerechtvaardigd belang bij het financieren van de gratis versie en bij fraudepreventie.</p>
+  <p>Meer: <a href="https://policies.google.com/technologies/partner-sites?hl=nl">Hoe Google gegevens gebruikt van sites of apps die zijn diensten gebruiken</a> · <a href="https://policies.google.com/privacy?hl=nl">Privacybeleid van Google</a>.</p>
+
+  <h3><span class="num">07</span>Promotie van onze eigen app</h3>
+  <p>Wanneer Google geen advertentie heeft, toont de app een kaart over onze app M31 Edu Arabic. „Bekijken in de store” opent Google Play. De app geeft daarbij geen gegevens door.</p>
+
+  <h3><span class="num">08</span>Wat de app niet doet</h3>
+  <ul>
+    <li>geen gebruikersaccount, geen inloggen,</li>
+    <li>verzamelt geen naam, e-mailadres of telefoonnummer — uw voornaam blijft, als u die invult, op het toestel,</li>
+    <li>bepaalt uw locatie niet (alleen Google kan in de versie met advertenties een locatie bij benadering schatten op basis van het IP-adres, punt 06),</li>
+    <li>heeft geen eigen analyse, gebruiksstatistieken of foutrapportage,</li>
+    <li>toont nooit op eigen initiatief advertenties, en op iPhone, iPad en Mac helemaal niet,</li>
+    <li>heeft geen chat, geen door gebruikers ingestuurde inhoud en geen ranglijsten,</li>
+    <li>verkoopt geen gegevens en deelt er geen met derden; de enige uitzondering is de advertentiemodule van Google in de gratis Android-versie (punt 06).</li>
+  </ul>
+
+  <h3><span class="num">09</span>Kinderen</h3>
+  <p>M31 Edu Cube 2D is een educatieve puzzel. De gratis Android-versie, waarin een advertentie kan verschijnen, is niet gericht op kinderen onder de 13 jaar, en de inhoud van advertenties is beperkt (punt 06). De versie voor iPhone, iPad en Mac bevat geen advertenties en verzamelt geen gegevens. Wij verzamelen niet bewust persoonsgegevens van kinderen. Aankopen worden afgehandeld door de store, die zijn eigen ouderlijk toezicht toepast.</p>
+
+  <h3><span class="num">10</span>Uw rechten</h3>
+  <p>Op grond van de AVG, de Britse AVG en de Zwitserse federale wet op de gegevensbescherming hebt u recht op inzage, rectificatie, verwijdering, beperking van de verwerking, overdraagbaarheid van gegevens en bezwaar, en het recht een klacht in te dienen bij een toezichthoudende autoriteit. U kunt uw toestemming voor advertenties altijd intrekken: Instellingen → „Privacyinstellingen voor advertenties”.</p>
+  <p>Wij bewaren zelf geen persoonsgegevens over u, dus er is niets dat wij zouden kunnen verstrekken, corrigeren of verwijderen. Advertentiegegevens worden verwerkt door Google — u kunt die beheren in <a href="https://myadcenter.google.com/?hl=nl">Mijn advertentiecentrum</a>. De gegevens die de app bewaart, beheert u via de instellingen van uw toestel. Hebt u vragen over privacy, schrijf dan naar het contactadres.</p>
+
+  <h3><span class="num">11</span>Wijzigingen in deze verklaring</h3>
+  <p>Deze versie van de verklaring dekt de advertenties in de Android-versie (vanaf app-versie 1.0.001). Verandert het gedrag van de app opnieuw, dan werken wij deze pagina en de datum „Geldig vanaf” boven aan de pagina bij.</p>
+
+</section>
+
 <!-- ══════════════════ POLSKI ══════════════════ -->
+
 <section class="lang" id="pl" lang="pl">
   <h2>Polityka prywatności</h2>
 
@@ -463,7 +865,160 @@
 
 </section>
 
+<!-- ══════════════════ PORTUGUÊS (BR) ══════════════════ -->
+
+<section class="lang" id="br" lang="pt-BR">
+  <h2>Política de Privacidade</h2>
+
+  <div class="core">
+    <p><strong>Não temos contas nem servidor próprio, e não coletamos seus dados pessoais.</strong> A versão para iPhone, iPad e Mac não contém publicidade nem ferramentas de análise.</p>
+    <p>A versão gratuita para Android mostra um anúncio do Google AdMob <strong>somente quando você escolhe assisti-lo</strong>. Para isso, o Google trata os dados descritos no item 06. Com o Premium não há anúncios.</p>
+  </div>
+
+  <h3><span class="num">01</span>Quem é o responsável</h3>
+  <p>O app “M31 Edu Cube 2D” (identificador <code>ch.m31.edu.cube2d</code>) é publicado pela Neuron M31 (Andrzej Węgrzyn). Para questões de privacidade, escreva para o endereço indicado no início desta página.</p>
+
+  <h3><span class="num">02</span>Permissões</h3>
+  <p>O app não pede acesso ao microfone, à câmera, aos contatos, às fotos, aos arquivos nem à localização, e não exibe solicitações de permissão do sistema. A versão para Android tem permissões comuns, concedidas sem perguntar: vibração, acesso à internet, compras no Google Play e — para o módulo de anúncios do Google — o ID de publicidade. Os detalhes estão nos itens 04 e 06.</p>
+
+  <h3><span class="num">03</span>Dados no seu dispositivo</h3>
+  <p>O app guarda <strong>no seu dispositivo</strong>: o idioma escolhido, seu nome (se você digitar — serve apenas para a saudação dentro do app), um identificador de instalação (formado pelo código do idioma e pela hora da primeira abertura; aparece em “Sobre o app” para que você possa informá-lo ao entrar em contato com a gente), as configurações, o jogo em andamento, seus projetos de cubo, os contadores dos limites da versão gratuita e se o Premium está ativo. O app não envia nada disso para lugar algum, e nós não temos acesso a esses dados.</p>
+  <p>Se você tiver o Backup do Android (Auto Backup) ativado, o Android pode copiar esses dados para sua Conta do Google; no iOS o mesmo pode acontecer por meio de um backup do iCloud do seu dispositivo. Isso ocorre dentro dos serviços do Google ou da Apple, conforme as políticas de privacidade deles, e permanece sob seu controle — você pode desativar nas configurações do dispositivo.</p>
+  <p>Desinstalar o app apaga os dados guardados. Você também pode zerá-los limpando os dados do app nas configurações do sistema.</p>
+
+  <h3><span class="num">04</span>Compras no app</h3>
+  <p>O Premium é uma compra única feita pelo sistema de pagamentos do Google Play (Android) ou da App Store (iPhone, iPad, Mac). A loja cuida de toda a compra — o app <strong>nunca vê nem armazena</strong> dados de cartão, endereços de cobrança ou qualquer outra informação de pagamento. Ele apenas pergunta à loja se o Premium pertence à conta conectada no dispositivo e guarda essa resposta localmente. As lojas nos enviam relatórios de vendas (por exemplo, número do pedido, data, país e preço), de que precisamos para a contabilidade e para os reembolsos.</p>
+  <p>O Premium comprado na App Store funciona em todos os seus dispositivos iPhone, iPad e Mac conectados com a mesma Conta Apple. As compras não são transferidas entre o Google Play e a App Store.</p>
+  <p>O app se conecta à internet apenas para dois fins: processar a compra pela loja e — somente na versão gratuita para Android — exibir um anúncio (item 06).</p>
+
+  <h3><span class="num">05</span>Desafios</h3>
+  <p>Um desafio é um código curto (16 caracteres, ou 24 no jogo livre; começa com <code>M31</code>) que descreve um cubo embaralhado: o tamanho, a disposição das cores, a planificação e o número de movimentos. Não contém nome, conta, identificador de dispositivo nem texto livre. O app não envia os códigos para nenhum servidor.</p>
+  <p>Ao compartilhar um desafio, você escolhe como: com a função de compartilhamento do seu dispositivo ou copiando o código. O serviço que você escolher (um mensageiro, e-mail etc.) trata a mensagem conforme a própria política de privacidade.</p>
+  <p>Você recebe um desafio digitando o código ou usando “Colar da área de transferência” — o app lê a área de transferência somente quando você toca nesse botão. Nada é devolvido ao remetente.</p>
+
+  <h3><span class="num">06</span>Publicidade — somente na versão gratuita para Android</h3>
+  <p><strong>Quando.</strong> O módulo de anúncios do Google funciona apenas na versão gratuita para Android, depois do fim do período de teste. Durante o período de teste, com o Premium e na versão para iPhone, iPad e Mac não há anúncios.</p>
+  <p><strong>Como.</strong> É um anúncio premiado: aparece somente depois que você toca em “Assistir a um anúncio” e, uma vez assistido, libera recursos adicionais por 10 minutos. O app nunca exibe anúncios por conta própria. Para que o anúncio possa começar sem espera, o módulo o carrega com antecedência — por isso o Google pode tratar dados mesmo que você nunca assista a um anúncio.</p>
+  <p><strong>Quem.</strong> Google AdMob — Google Ireland Limited para usuários do Espaço Econômico Europeu e da Suíça, e Google LLC nos demais países.</p>
+  <p><strong>Quais dados.</strong> O Google pode tratar:</p>
+  <ul>
+    <li>seu endereço IP, também para estimar sua localização aproximada,</li>
+    <li>o ID de publicidade e o ID do conjunto de apps,</li>
+    <li>as interações com o app e com o anúncio (abertura do app, toques, visualizações de vídeo),</li>
+    <li>dados de diagnóstico (por exemplo, tempo de abertura e desempenho).</li>
+  </ul>
+  <p>Finalidades: exibir e medir anúncios, análise e prevenção de fraudes. Os dados são transmitidos de forma criptografada. Do Google recebemos apenas estatísticas agregadas (como o número de anúncios exibidos), sem dados que identifiquem você.</p>
+  <p><strong>Consentimento.</strong> No Espaço Econômico Europeu, no Reino Unido e na Suíça, o formulário de consentimento do Google aparece antes do primeiro anúncio. Você pode mudar sua escolha a qualquer momento: Configurações → “Configurações de privacidade dos anúncios”. Se você não consentir, o Google pode exibir anúncios não personalizados ou limitados. O módulo de consentimento do Google guarda sua escolha no dispositivo.</p>
+  <p><strong>Sem bloqueio.</strong> Se nenhum anúncio puder ser exibido (falta de consentimento, de conexão ou de anúncio disponível), o app mostra um cartão sobre o nosso app M31 Edu Arabic (item 07) e libera os recursos de todo modo.</p>
+  <p><strong>ID de publicidade.</strong> Você pode redefini-lo ou excluí-lo nas configurações do Android (Privacidade → Anúncios, ou Google → Anúncios).</p>
+  <p><strong>O conteúdo dos anúncios</strong> é limitado à classificação de maturidade “PG” do Google.</p>
+  <p><strong>Base legal</strong> (GDPR, GDPR do Reino Unido, Lei Federal suíça de Proteção de Dados): seu consentimento onde ele for exigido; nos demais casos, nosso legítimo interesse em financiar a versão gratuita e em prevenir fraudes.</p>
+  <p>Mais: <a href="https://policies.google.com/technologies/partner-sites?hl=pt-BR">Como o Google usa informações de sites ou apps que utilizam os serviços dele</a> · <a href="https://policies.google.com/privacy?hl=pt-BR">Política de Privacidade do Google</a>.</p>
+
+  <h3><span class="num">07</span>Divulgação do nosso próprio app</h3>
+  <p>Quando o Google não tem anúncio, o app mostra um cartão sobre o nosso app M31 Edu Arabic. “Ver na loja” abre o Google Play. O app não transmite nenhum dado ao fazer isso.</p>
+
+  <h3><span class="num">08</span>O que o app não faz</h3>
+  <ul>
+    <li>não cria conta de usuário e não exige login,</li>
+    <li>não coleta nome, endereço de e-mail nem número de telefone — seu nome, se você digitar, permanece no dispositivo,</li>
+    <li>não determina sua localização (somente o Google pode estimar uma localização aproximada a partir do endereço IP na versão com anúncios, item 06),</li>
+    <li>não tem análise própria, estatísticas de uso nem relatórios de erro,</li>
+    <li>nunca exibe anúncios por conta própria, e no iPhone, iPad e Mac não exibe nenhum,</li>
+    <li>não tem chat, conteúdo enviado por usuários nem placares,</li>
+    <li>não vende dados e não os compartilha com terceiros; a única exceção é o módulo de anúncios do Google na versão gratuita para Android (item 06).</li>
+  </ul>
+
+  <h3><span class="num">09</span>Crianças</h3>
+  <p>O M31 Edu Cube 2D é um quebra-cabeça educativo. A versão gratuita para Android, na qual pode aparecer um anúncio, não é dirigida a crianças menores de 13 anos, e o conteúdo dos anúncios é limitado (item 06). A versão para iPhone, iPad e Mac não contém publicidade e não coleta dados. Não coletamos conscientemente dados pessoais de crianças. As compras são processadas pela loja, que aplica os próprios controles dos pais.</p>
+
+  <h3><span class="num">10</span>Seus direitos</h3>
+  <p>Com base no GDPR, no GDPR do Reino Unido e na Lei Federal suíça de Proteção de Dados, você tem direito de acesso, retificação, exclusão, limitação do tratamento, portabilidade dos dados e oposição, além do direito de apresentar reclamação a uma autoridade de proteção de dados. Você pode retirar o consentimento para anúncios a qualquer momento em Configurações → “Configurações de privacidade dos anúncios”.</p>
+  <p>Nós mesmos não guardamos nenhum dado pessoal seu, portanto não há nada que pudéssemos fornecer, corrigir ou apagar. Os dados de publicidade são tratados pelo Google — você pode gerenciá-los em <a href="https://myadcenter.google.com/?hl=pt-BR">Minha Central de Anúncios</a>. Os dados guardados pelo app você controla pelas configurações do seu dispositivo. Se tiver dúvidas sobre privacidade, escreva para o endereço de contato.</p>
+
+  <h3><span class="num">11</span>Alterações nesta política</h3>
+  <p>Esta versão da política abrange a publicidade na versão para Android (a partir da versão 1.0.001 do app). Se o comportamento do app mudar novamente, atualizaremos esta página e a data “Em vigor desde” do início.</p>
+
+</section>
+
+<!-- ══════════════════ PORTUGUÊS (PT) ══════════════════ -->
+
+<section class="lang" id="pt" lang="pt-PT">
+  <h2>Política de Privacidade</h2>
+
+  <div class="core">
+    <p><strong>Não temos contas nem servidor próprio, e não recolhemos os seus dados pessoais.</strong> A versão para iPhone, iPad e Mac não contém publicidade nem ferramentas de análise.</p>
+    <p>A versão gratuita para Android mostra um anúncio do Google AdMob <strong>apenas quando o utilizador escolhe vê-lo</strong>. Para tal, a Google trata os dados descritos no ponto 06. Com o Premium não há anúncios.</p>
+  </div>
+
+  <h3><span class="num">01</span>Quem é o responsável</h3>
+  <p>A aplicação «M31 Edu Cube 2D» (identificador <code>ch.m31.edu.cube2d</code>) é publicada pela Neuron M31 (Andrzej Węgrzyn). Em questões de privacidade, escreva para o endereço indicado no início desta página.</p>
+
+  <h3><span class="num">02</span>Permissões</h3>
+  <p>A aplicação não pede acesso ao microfone, à câmara, aos contactos, às fotografias, aos ficheiros nem à localização, e não apresenta pedidos de permissão do sistema. A versão para Android tem permissões comuns, concedidas sem perguntar: vibração, acesso à Internet, compras no Google Play e — para o módulo de anúncios da Google — o ID de publicidade. Os detalhes constam nos pontos 04 e 06.</p>
+
+  <h3><span class="num">03</span>Dados no seu dispositivo</h3>
+  <p>A aplicação guarda <strong>no seu dispositivo</strong>: o idioma escolhido, o seu nome (se o introduzir — serve apenas para a saudação dentro da aplicação), um identificador de instalação (formado pelo código do idioma e pela hora do primeiro arranque; aparece em «Acerca da aplicação» para que o possa indicar quando entrar em contacto connosco), as definições, o jogo em curso, os seus projetos de cubo, os contadores dos limites da versão gratuita e a informação sobre se o Premium está ativo. A aplicação não envia nada disto para lugar algum, e nós não temos acesso a esses dados.</p>
+  <p>Se tiver a Cópia de segurança do Android (Auto Backup) ativada, o Android pode copiar estes dados para a sua Conta Google; no iOS o mesmo pode acontecer através de uma cópia de segurança do iCloud do seu dispositivo. Isso ocorre dentro dos serviços da Google ou da Apple, nos termos das respetivas políticas de privacidade, e permanece sob o seu controlo — pode desativá-lo nas definições do dispositivo.</p>
+  <p>Desinstalar a aplicação elimina os dados guardados. Também os pode reiniciar, limpando os dados da aplicação nas definições do sistema.</p>
+
+  <h3><span class="num">04</span>Compras na aplicação</h3>
+  <p>O Premium é uma compra única efetuada através do sistema de pagamentos do Google Play (Android) ou da App Store (iPhone, iPad, Mac). A loja trata de toda a compra — a aplicação <strong>nunca vê nem armazena</strong> dados de cartão, endereços de faturação ou qualquer outra informação de pagamento. Apenas pergunta à loja se o Premium pertence à conta com sessão iniciada no dispositivo e guarda essa resposta localmente. As lojas enviam-nos relatórios de vendas (por exemplo, número de encomenda, data, país e preço), de que necessitamos para a contabilidade e para os reembolsos.</p>
+  <p>O Premium comprado na App Store funciona em todos os seus dispositivos iPhone, iPad e Mac com sessão iniciada na mesma Conta Apple. As compras não são transferidas entre o Google Play e a App Store.</p>
+  <p>A aplicação liga-se à Internet apenas para dois fins: tratar uma compra através da loja e — exclusivamente na versão gratuita para Android — apresentar um anúncio (ponto 06).</p>
+
+  <h3><span class="num">05</span>Desafios</h3>
+  <p>Um desafio é um código curto (16 caracteres, ou 24 no jogo livre; começa por <code>M31</code>) que descreve um cubo misturado: a dimensão, a disposição das cores, a planificação e o número de movimentos. Não contém nome, conta, identificador de dispositivo nem texto livre. A aplicação não envia os códigos para nenhum servidor.</p>
+  <p>Ao partilhar um desafio, o utilizador escolhe como: com a função de partilha do dispositivo ou copiando o código. O serviço que escolher (uma aplicação de mensagens, o correio eletrónico, etc.) trata a mensagem nos termos da sua própria política de privacidade.</p>
+  <p>Recebe um desafio escrevendo o código ou através de «Colar da área de transferência» — a aplicação lê a área de transferência apenas quando toca nesse botão. Nada é devolvido ao remetente.</p>
+
+  <h3><span class="num">06</span>Publicidade — apenas na versão gratuita para Android</h3>
+  <p><strong>Quando.</strong> O módulo de anúncios da Google funciona apenas na versão gratuita para Android, depois do fim do período experimental. Durante o período experimental, com o Premium e na versão para iPhone, iPad e Mac não há anúncios.</p>
+  <p><strong>Como.</strong> É um anúncio com recompensa: aparece apenas depois de tocar em «Ver um anúncio» e, uma vez visto, desbloqueia funcionalidades adicionais durante 10 minutos. A aplicação nunca apresenta anúncios por si própria. Para que o anúncio possa começar sem espera, o módulo carrega-o antecipadamente — por isso a Google pode tratar dados mesmo que nunca veja um anúncio.</p>
+  <p><strong>Quem.</strong> Google AdMob — Google Ireland Limited para utilizadores do Espaço Económico Europeu e da Suíça, e Google LLC nos restantes países.</p>
+  <p><strong>Que dados.</strong> A Google pode tratar:</p>
+  <ul>
+    <li>o seu endereço IP, também para estimar a sua localização aproximada,</li>
+    <li>o ID de publicidade e o ID do conjunto de aplicações,</li>
+    <li>as interações com a aplicação e com o anúncio (arranque da aplicação, toques, visualizações de vídeo),</li>
+    <li>dados de diagnóstico (por exemplo, tempo de arranque e desempenho).</li>
+  </ul>
+  <p>Finalidades: apresentação e medição de anúncios, análise e prevenção de fraude. Os dados são transmitidos de forma cifrada. Da Google recebemos apenas estatísticas agregadas (como o número de anúncios apresentados), sem dados que o identifiquem.</p>
+  <p><strong>Consentimento.</strong> No Espaço Económico Europeu, no Reino Unido e na Suíça, o formulário de consentimento da Google aparece antes do primeiro anúncio. Pode alterar a sua escolha em qualquer momento: Definições → «Definições de privacidade dos anúncios». Se não der consentimento, a Google pode apresentar anúncios não personalizados ou limitados. O módulo de consentimento da Google guarda a sua escolha no dispositivo.</p>
+  <p><strong>Sem bloqueio.</strong> Quando não é possível apresentar nenhum anúncio (falta de consentimento, de ligação ou de anúncio disponível), a aplicação mostra um cartão sobre a nossa aplicação M31 Edu Arabic (ponto 07) e desbloqueia as funcionalidades de qualquer modo.</p>
+  <p><strong>ID de publicidade.</strong> Pode reiniciá-lo ou eliminá-lo nas definições do Android (Privacidade → Anúncios, ou Google → Anúncios).</p>
+  <p><strong>O conteúdo dos anúncios</strong> está limitado à classificação de maturidade «PG» da Google.</p>
+  <p><strong>Fundamento jurídico</strong> (RGPD, RGPD do Reino Unido, Lei Federal suíça de Proteção de Dados): o seu consentimento onde este seja exigido; nos restantes casos, o nosso interesse legítimo em financiar a versão gratuita e em prevenir a fraude.</p>
+  <p>Mais: <a href="https://policies.google.com/technologies/partner-sites?hl=pt-PT">Como a Google utiliza informações de sites ou aplicações que usam os seus serviços</a> · <a href="https://policies.google.com/privacy?hl=pt-PT">Política de Privacidade da Google</a>.</p>
+
+  <h3><span class="num">07</span>Promoção da nossa própria aplicação</h3>
+  <p>Quando a Google não tem anúncios, a aplicação mostra um cartão sobre a nossa aplicação M31 Edu Arabic. «Ver na loja» abre o Google Play. A aplicação não transmite quaisquer dados ao fazê-lo.</p>
+
+  <h3><span class="num">08</span>O que a aplicação não faz</h3>
+  <ul>
+    <li>não cria conta de utilizador e não exige início de sessão,</li>
+    <li>não recolhe nome, endereço de correio eletrónico nem número de telefone — o seu nome, se o introduzir, permanece no dispositivo,</li>
+    <li>não determina a sua localização (apenas a Google pode estimar uma localização aproximada a partir do endereço IP na versão com anúncios, ponto 06),</li>
+    <li>não tem análise própria, estatísticas de utilização nem relatórios de erros,</li>
+    <li>nunca apresenta anúncios por si própria e, no iPhone, iPad e Mac, não apresenta nenhum,</li>
+    <li>não tem conversas, conteúdos enviados por utilizadores nem tabelas classificativas,</li>
+    <li>não vende dados nem os partilha com terceiros; a única exceção é o módulo de anúncios da Google na versão gratuita para Android (ponto 06).</li>
+  </ul>
+
+  <h3><span class="num">09</span>Crianças</h3>
+  <p>O M31 Edu Cube 2D é um jogo didático. A versão gratuita para Android, na qual pode aparecer um anúncio, não se dirige a crianças com menos de 13 anos, e o conteúdo dos anúncios é limitado (ponto 06). A versão para iPhone, iPad e Mac não contém publicidade e não recolhe dados. Não recolhemos conscientemente dados pessoais de crianças. As compras são tratadas pela loja, que aplica os seus próprios controlos parentais.</p>
+
+  <h3><span class="num">10</span>Os seus direitos</h3>
+  <p>Ao abrigo do RGPD, do RGPD do Reino Unido e da Lei Federal suíça de Proteção de Dados, tem direito de acesso, retificação, apagamento, limitação do tratamento, portabilidade dos dados e oposição, bem como o direito de apresentar reclamação a uma autoridade de proteção de dados. Pode retirar o consentimento para anúncios em qualquer momento em Definições → «Definições de privacidade dos anúncios».</p>
+  <p>Nós próprios não conservamos quaisquer dados pessoais seus, pelo que não há nada que pudéssemos fornecer, corrigir ou apagar. Os dados de publicidade são tratados pela Google — pode geri-los no <a href="https://myadcenter.google.com/?hl=pt-PT">Meu Centro de Anúncios</a>. Os dados guardados pela aplicação são controlados através das definições do seu dispositivo. Se tiver dúvidas sobre privacidade, escreva para o endereço de contacto.</p>
+
+  <h3><span class="num">11</span>Alterações a esta política</h3>
+  <p>Esta versão da política abrange a publicidade na versão para Android (a partir da versão 1.0.001 da aplicação). Se o comportamento da aplicação voltar a mudar, atualizaremos esta página e a data «Em vigor desde» do início.</p>
+
+</section>
+
 <!-- ══════════════════ SLOVENSKY ══════════════════ -->
+
 <section class="lang" id="sk" lang="sk">
   <h2>Zásady ochrany osobných údajov</h2>
 
@@ -535,6 +1090,462 @@
 
   <h3><span class="num">11</span>Zmeny týchto zásad</h3>
   <p>Táto verzia zásad zahŕňa reklamu vo verzii pre Android (od verzie aplikácie 1.0.001). Ak sa správanie aplikácie znova zmení, aktualizujeme túto stránku a dátum „Platné od“ v úvode.</p>
+
+</section>
+
+<!-- ══════════════════ TÜRKÇE ══════════════════ -->
+
+<section class="lang" id="tr" lang="tr">
+  <h2>Gizlilik Politikası</h2>
+
+  <div class="core">
+    <p><strong>Hesaplarımız ve kendimize ait bir sunucumuz yok; kişisel verilerinizi toplamıyoruz.</strong> iPhone, iPad ve Mac sürümünde reklam ve analiz aracı bulunmaz.</p>
+    <p>Ücretsiz Android sürümü, Google AdMob reklamını <strong>yalnızca siz izlemeyi seçtiğinizde</strong> gösterir. Google bunun için 06. bölümde açıklanan verileri işler. Premium ile reklam gösterilmez.</p>
+  </div>
+
+  <h3><span class="num">01</span>Sorumlu kim</h3>
+  <p>“M31 Edu Cube 2D” uygulaması (tanımlayıcı: <code>ch.m31.edu.cube2d</code>) Neuron M31 (Andrzej Węgrzyn) tarafından yayımlanır. Gizlilikle ilgili konularda bu sayfanın başında belirtilen adrese yazın.</p>
+
+  <h3><span class="num">02</span>İzinler</h3>
+  <p>Uygulama mikrofonunuza, kameranıza, kişilerinize, fotoğraflarınıza, dosyalarınıza veya konumunuza erişim istemez ve sistem izin istekleri göstermez. Android sürümü, sorulmadan verilen olağan izinlere sahiptir: titreşim, internet erişimi, Google Play satın alımları ve — Google reklam modülü için — reklam kimliği. Ayrıntılar 04. ve 06. bölümlerdedir.</p>
+
+  <h3><span class="num">03</span>Cihazınızdaki veriler</h3>
+  <p>Uygulama <strong>cihazınızda</strong> şunları saklar: seçtiğiniz dil, adınız (girerseniz — yalnızca uygulamadaki karşılama için kullanılır), bir kurulum tanımlayıcısı (dil kodu ile ilk açılış zamanından oluşturulur; bizimle iletişime geçtiğinizde belirtebilmeniz için “Uygulama hakkında” bölümünde görünür), ayarlar, sürmekte olan oyun, küp tasarımlarınız, ücretsiz sürüm sınırlarının sayaçları ve Premium’un etkin olup olmadığı bilgisi. Uygulama bunların hiçbirini hiçbir yere göndermez ve bizim bu verilere erişimimiz yoktur.</p>
+  <p>Android Yedekleme (Auto Backup) açıksa Android bu verileri Google Hesabınıza kopyalayabilir; iOS’ta aynısı cihazınızın iCloud yedeği üzerinden olabilir. Bu, Google veya Apple hizmetleri içinde, onların gizlilik politikalarına göre gerçekleşir ve sizin denetiminizde kalır — cihaz ayarlarından kapatabilirsiniz.</p>
+  <p>Uygulamayı kaldırmak saklanan verileri siler. Sistem ayarlarından uygulamanın verilerini temizleyerek de sıfırlayabilirsiniz.</p>
+
+  <h3><span class="num">04</span>Uygulama içi satın alımlar</h3>
+  <p>Premium, Google Play (Android) veya App Store (iPhone, iPad, Mac) faturalandırma sistemi üzerinden yapılan tek seferlik bir satın alımdır. Satın alımın tamamını mağaza yürütür — uygulama kart bilgilerini, fatura adreslerini veya başka ödeme bilgilerini <strong>hiçbir zaman görmez ve saklamaz</strong>. Mağazaya yalnızca Premium’un cihazda oturum açmış hesaba ait olup olmadığını sorar ve bu yanıtı yerel olarak saklar. Mağazalar bize satış raporları gönderir (örneğin sipariş numarası, tarih, ülke ve fiyat); bunlara muhasebe ve geri ödemeler için ihtiyaç duyarız.</p>
+  <p>App Store’dan alınan Premium, aynı Apple Hesabı ile oturum açtığınız tüm iPhone, iPad ve Mac cihazlarınızda çalışır. Satın alımlar Google Play ile App Store arasında aktarılmaz.</p>
+  <p>Uygulama internete yalnızca iki amaçla bağlanır: satın alımı mağaza üzerinden yürütmek ve — sadece ücretsiz Android sürümünde — reklam göstermek (06. bölüm).</p>
+
+  <h3><span class="num">05</span>Meydan okumalar</h3>
+  <p>Meydan okuma, karıştırılmış bir küpü tanımlayan kısa bir koddur (16 karakter, serbest oyunda 24; <code>M31</code> ile başlar): küpün boyutu, renk dizilimi, açınımı ve hamle sayısı. İçinde ad, hesap, cihaz tanımlayıcısı veya serbest metin yoktur. Uygulama kodları hiçbir sunucuya göndermez.</p>
+  <p>Bir meydan okumayı paylaşırken nasıl paylaşacağınızı siz seçersiniz: cihazınızın paylaşma işleviyle veya kodu kopyalayarak. Seçtiğiniz hizmet (bir mesajlaşma uygulaması, e-posta vb.) iletiyi kendi gizlilik politikasına göre işler.</p>
+  <p>Meydan okumayı kodu yazarak veya “Panodan yapıştır” ile alırsınız — uygulama panoyu yalnızca bu düğmeye dokunduğunuzda okur. Gönderene hiçbir şey geri iletilmez.</p>
+
+  <h3><span class="num">06</span>Reklamlar — yalnızca ücretsiz Android sürümü</h3>
+  <p><strong>Ne zaman.</strong> Google reklam modülü yalnızca ücretsiz Android sürümünde, deneme süresi sona erdikten sonra çalışır. Deneme süresinde, Premium ile ve iPhone, iPad ve Mac sürümünde reklam yoktur.</p>
+  <p><strong>Nasıl.</strong> Bu bir ödüllü reklamdır: yalnızca “Reklam izle”ye dokunduktan sonra görünür ve izlendiğinde 10 dakika boyunca ek işlevlerin kilidini açar. Uygulama kendi başına asla reklam göstermez. Reklamın beklemeden başlayabilmesi için modül onu önceden yükler — bu nedenle hiç reklam izlemeseniz de Google veri işleyebilir.</p>
+  <p><strong>Kim.</strong> Google AdMob — Avrupa Ekonomik Alanı ve İsviçre’deki kullanıcılar için Google Ireland Limited, diğer yerlerde Google LLC.</p>
+  <p><strong>Hangi veriler.</strong> Google şunları işleyebilir:</p>
+  <ul>
+    <li>IP adresiniz, yaklaşık konumunuzu tahmin etmek için de,</li>
+    <li>reklam kimliği ve uygulama kümesi kimliği,</li>
+    <li>uygulama ve reklamla etkileşimler (uygulamanın açılması, dokunmalar, video görüntülemeleri),</li>
+    <li>tanılama verileri (örneğin açılış süresi ve performans).</li>
+  </ul>
+  <p>Amaçlar: reklam gösterimi ve ölçümü, analiz ve dolandırıcılığın önlenmesi. Veriler şifreli olarak iletilir. Google’dan yalnızca toplu istatistikler alırız (gösterilen reklam sayısı gibi), sizi tanımlayan veriler olmadan.</p>
+  <p><strong>Onay.</strong> Avrupa Ekonomik Alanı’nda, Birleşik Krallık’ta ve İsviçre’de ilk reklamdan önce Google’ın onay formu görünür. Seçiminizi dilediğiniz zaman değiştirebilirsiniz: Ayarlar → “Reklam gizlilik ayarları”. Onay vermezseniz Google kişiselleştirilmemiş veya sınırlı reklamlar gösterebilir. Google’ın onay modülü seçiminizi cihazda saklar.</p>
+  <p><strong>Kilitlenme yok.</strong> Hiçbir reklam gösterilemiyorsa (onay yok, bağlantı yok, kullanılabilir reklam yok), uygulama kendi uygulamamız M31 Edu Arabic hakkında bir kart gösterir (07. bölüm) ve işlevlerin kilidini yine de açar.</p>
+  <p><strong>Reklam kimliği.</strong> Android ayarlarından sıfırlayabilir veya silebilirsiniz (Gizlilik → Reklamlar, ya da Google → Reklamlar).</p>
+  <p><strong>Reklam içeriği</strong> Google’ın “PG” olgunluk derecelendirmesiyle sınırlıdır.</p>
+  <p><strong>Hukuki dayanak</strong> (GDPR, Birleşik Krallık GDPR’ı, İsviçre Federal Veri Koruma Kanunu): gerekli olduğu yerlerde onayınız; diğer durumlarda ücretsiz sürümü finanse etmeye ve dolandırıcılığı önlemeye yönelik meşru menfaatimiz.</p>
+  <p>Daha fazlası: <a href="https://policies.google.com/technologies/partner-sites?hl=tr">Google, hizmetlerini kullanan sitelerden veya uygulamalardan gelen bilgileri nasıl kullanır</a> · <a href="https://policies.google.com/privacy?hl=tr">Google Gizlilik Politikası</a>.</p>
+
+  <h3><span class="num">07</span>Kendi uygulamamızın tanıtımı</h3>
+  <p>Google’ın reklamı olmadığında uygulama, kendi uygulamamız M31 Edu Arabic hakkında bir kart gösterir. “Mağazada gör” Google Play’i açar. Uygulama bunu yaparken hiçbir veri aktarmaz.</p>
+
+  <h3><span class="num">08</span>Uygulamanın yapmadıkları</h3>
+  <ul>
+    <li>kullanıcı hesabı yok, oturum açma yok,</li>
+    <li>ad, e-posta adresi veya telefon numarası toplamaz — girdiğiniz adınız cihazda kalır,</li>
+    <li>konumunuzu belirlemez (reklamlı sürümde yalnızca Google, IP adresinden yaklaşık bir konum tahmin edebilir, 06. bölüm),</li>
+    <li>kendine ait analiz, kullanım istatistiği veya hata bildirimi yoktur,</li>
+    <li>kendi başına asla reklam göstermez; iPhone, iPad ve Mac’te ise hiç göstermez,</li>
+    <li>sohbet, kullanıcıların gönderdiği içerik veya sıralama tablosu yoktur,</li>
+    <li>veri satmaz ve üçüncü taraflarla paylaşmaz; tek istisna, ücretsiz Android sürümündeki Google reklam modülüdür (06. bölüm).</li>
+  </ul>
+
+  <h3><span class="num">09</span>Çocuklar</h3>
+  <p>M31 Edu Cube 2D eğitici bir zekâ oyunudur. Reklam görünebilen ücretsiz Android sürümü 13 yaşından küçük çocuklara yönelik değildir ve reklam içeriği sınırlandırılmıştır (06. bölüm). iPhone, iPad ve Mac sürümünde reklam yoktur ve hiçbir veri toplanmaz. Çocuklara ait kişisel verileri bilerek toplamıyoruz. Satın alımları, kendi ebeveyn denetimlerini uygulayan mağaza yürütür.</p>
+
+  <h3><span class="num">10</span>Haklarınız</h3>
+  <p>GDPR, Birleşik Krallık GDPR’ı ve İsviçre Federal Veri Koruma Kanunu uyarınca erişim, düzeltme, silme, işlemenin kısıtlanması, veri taşınabilirliği ve itiraz haklarına, ayrıca bir veri koruma kurumuna şikâyette bulunma hakkına sahipsiniz. Reklamlara verdiğiniz onayı dilediğiniz zaman Ayarlar → “Reklam gizlilik ayarları” bölümünden geri alabilirsiniz.</p>
+  <p>Hakkınızda kişisel veri tutmuyoruz; dolayısıyla verebileceğimiz, düzeltebileceğimiz veya silebileceğimiz bir şey yok. Reklam verilerini Google işler — bunları <a href="https://myadcenter.google.com/?hl=tr">Reklam Merkezim</a> üzerinden yönetebilirsiniz. Uygulamanın sakladığı verileri cihaz ayarlarınız üzerinden denetlersiniz. Gizlilikle ilgili sorularınız için iletişim adresine yazın.</p>
+
+  <h3><span class="num">11</span>Bu politikadaki değişiklikler</h3>
+  <p>Politikanın bu sürümü Android sürümündeki reklamları kapsar (uygulamanın 1.0.001 sürümünden itibaren). Uygulamanın davranışı yeniden değişirse bu sayfayı ve başındaki “Yürürlük tarihi”ni güncelleriz.</p>
+
+</section>
+
+<!-- ══════════════════ РУССКИЙ ══════════════════ -->
+
+<section class="lang" id="ru" lang="ru">
+  <h2>Политика конфиденциальности</h2>
+
+  <div class="core">
+    <p><strong>У нас нет учётных записей и собственного сервера, и мы не собираем ваши персональные данные.</strong> Версия для iPhone, iPad и Mac не содержит рекламы и аналитических инструментов.</p>
+    <p>Бесплатная версия для Android показывает рекламу Google AdMob <strong>только тогда, когда вы сами её включите</strong>. При этом Google обрабатывает данные, описанные в пункте 06. С Premium рекламы нет.</p>
+  </div>
+
+  <h3><span class="num">01</span>Кто отвечает за приложение</h3>
+  <p>Приложение «M31 Edu Cube 2D» (идентификатор <code>ch.m31.edu.cube2d</code>) публикует Neuron M31 (Andrzej Węgrzyn). По вопросам конфиденциальности пишите на адрес, указанный в начале этой страницы.</p>
+
+  <h3><span class="num">02</span>Разрешения</h3>
+  <p>Приложение не запрашивает доступ к микрофону, камере, контактам, фотографиям, файлам и геопозиции и не показывает системных запросов разрешений. Версия для Android имеет обычные разрешения, выдаваемые без запроса: вибрация, доступ в интернет, покупки в Google Play и — для рекламного модуля Google — рекламный идентификатор. Подробности в пунктах 04 и 06.</p>
+
+  <h3><span class="num">03</span>Данные на вашем устройстве</h3>
+  <p>Приложение сохраняет <strong>на вашем устройстве</strong>: выбранный язык, имя (если вы его укажете — оно служит только для приветствия в приложении), идентификатор установки (создаётся из кода языка и времени первого запуска; он виден в окне «О приложении», вы можете указать его при обращении к нам), настройки, текущую игру, ваши проекты куба, счётчики ограничений бесплатной версии и сведения о том, активен ли Premium. Приложение никуда этих данных не отправляет, и у нас к ним нет доступа.</p>
+  <p>Если у вас включена функция «Резервное копирование Android» (Auto Backup), система Android может скопировать эти данные в вашу учётную запись Google; в iOS то же самое может произойти через резервную копию устройства в iCloud. Это происходит в рамках сервисов Google или Apple, согласно их политикам конфиденциальности, и остаётся под вашим контролем — это можно отключить в настройках устройства.</p>
+  <p>Удаление приложения удаляет сохранённые данные. Их также можно сбросить, очистив данные приложения в настройках системы.</p>
+
+  <h3><span class="num">04</span>Покупки в приложении</h3>
+  <p>Premium — это разовая покупка через платёжную систему Google Play (Android) либо App Store (iPhone, iPad, Mac). Всю покупку обслуживает магазин — приложение <strong>не видит и не хранит</strong> данные карты, адрес или иные платёжные сведения. Оно лишь спрашивает у магазина, принадлежит ли Premium учётной записи, в которую выполнен вход на устройстве, и сохраняет этот ответ локально. Магазины передают нам отчёты о продажах (например, номер заказа, дату, страну и цену), которые нужны для учёта и возвратов.</p>
+  <p>Premium, купленный в App Store, работает на всех ваших устройствах iPhone, iPad и Mac, где выполнен вход в одну и ту же учётную запись Apple. Покупки не переносятся между Google Play и App Store.</p>
+  <p>Приложение подключается к интернету только с двумя целями: чтобы обслужить покупку в магазине и — исключительно в бесплатной версии для Android — чтобы показать рекламу (пункт 06).</p>
+
+  <h3><span class="num">05</span>Вызовы</h3>
+  <p>Вызов — это короткий код (16 знаков, а в свободной игре 24; начинается с <code>M31</code>), описывающий перемешанный куб: его размер, расположение цветов, развёртку и количество ходов. Он не содержит имени, учётной записи, идентификатора устройства и произвольного текста. Приложение не отправляет коды ни на какой сервер.</p>
+  <p>Делясь вызовом, вы сами выбираете, как это сделать: функцией «Поделиться» на устройстве либо скопировав код. Выбранный сервис (мессенджер, электронная почта и т. п.) обрабатывает сообщение согласно своей политике конфиденциальности.</p>
+  <p>Вызов вы получаете, введя код или нажав «Вставить из буфера обмена» — приложение читает буфер обмена только после нажатия этой кнопки. Отправителю ничего не возвращается.</p>
+
+  <h3><span class="num">06</span>Реклама — только бесплатная версия для Android</h3>
+  <p><strong>Когда.</strong> Рекламный модуль Google работает только в бесплатной версии для Android, после окончания пробного периода. В пробный период, с Premium и в версии для iPhone, iPad и Mac рекламы нет.</p>
+  <p><strong>Как.</strong> Это реклама с вознаграждением: она появляется только после нажатия «Посмотреть рекламу» и после просмотра открывает дополнительные функции на 10 минут. Приложение никогда не показывает рекламу само. Чтобы реклама могла запуститься без ожидания, модуль загружает её заранее — поэтому Google может обрабатывать данные и в том случае, если вы не посмотрите ни одной рекламы.</p>
+  <p><strong>Кто.</strong> Google AdMob — Google Ireland Limited для пользователей из Европейской экономической зоны и Швейцарии, Google LLC за их пределами.</p>
+  <p><strong>Какие данные.</strong> Google может обрабатывать:</p>
+  <ul>
+    <li>IP-адрес, в том числе для оценки приблизительного местоположения,</li>
+    <li>рекламный идентификатор и идентификатор набора приложений,</li>
+    <li>взаимодействия с приложением и рекламой (запуск, нажатия, просмотры видео),</li>
+    <li>диагностические данные (например, время запуска и производительность).</li>
+  </ul>
+  <p>Цели: показ и измерение рекламы, аналитика и предотвращение мошенничества. Данные передаются в зашифрованном виде. От Google мы получаем только сводную статистику (например, число показанных объявлений), без данных, позволяющих вас идентифицировать.</p>
+  <p><strong>Согласие.</strong> В Европейской экономической зоне, Великобритании и Швейцарии перед первой рекламой появляется окно согласия Google. Выбор можно изменить в любой момент: Настройки → «Настройки конфиденциальности рекламы». Если вы не дадите согласия, Google может показывать неперсонализированную или ограниченную рекламу. Ваш выбор сохраняет на устройстве модуль согласия Google.</p>
+  <p><strong>Функции остаются доступными.</strong> Когда рекламу показать нельзя (нет согласия, нет соединения, нет рекламы), приложение показывает карточку нашего приложения M31 Edu Arabic (пункт 07) и всё равно открывает функции.</p>
+  <p><strong>Рекламный идентификатор</strong> можно сбросить или удалить в настройках Android (Конфиденциальность → Реклама либо Google → Реклама).</p>
+  <p><strong>Содержание рекламы</strong> ограничено категорией зрелости «PG» по классификации Google.</p>
+  <p><strong>Правовое основание</strong> (GDPR, британский GDPR, швейцарский закон о защите данных): ваше согласие там, где оно требуется; в остальных случаях — наш законный интерес в финансировании бесплатной версии и в предотвращении мошенничества.</p>
+  <p>Подробнее: <a href="https://policies.google.com/technologies/partner-sites?hl=ru">Как Google использует информацию с сайтов и приложений, которые используют его сервисы</a> · <a href="https://policies.google.com/privacy?hl=ru">Политика конфиденциальности Google</a>.</p>
+
+  <h3><span class="num">07</span>Продвижение собственного приложения</h3>
+  <p>Когда у Google нет рекламы, приложение показывает карточку нашего приложения M31 Edu Arabic. Кнопка «Посмотреть в магазине» открывает Google Play. Никаких данных приложение при этом не передаёт.</p>
+
+  <h3><span class="num">08</span>Чего приложение не делает</h3>
+  <ul>
+    <li>не создаёт учётную запись пользователя и не требует входа,</li>
+    <li>не собирает имя, адрес электронной почты и номер телефона — имя, если вы его укажете, остаётся на устройстве,</li>
+    <li>не определяет ваше местоположение (приблизительное местоположение по IP-адресу может оценивать только Google в версии с рекламой, пункт 06),</li>
+    <li>не имеет собственной аналитики, статистики использования и отчётов об ошибках,</li>
+    <li>никогда не показывает рекламу самостоятельно, а в версии для iPhone, iPad и Mac — не показывает вовсе,</li>
+    <li>не имеет чата, пользовательского контента и рейтингов,</li>
+    <li>не продаёт данные и не передаёт их третьим лицам; единственное исключение — рекламный модуль Google в бесплатной версии для Android (пункт 06).</li>
+  </ul>
+
+  <h3><span class="num">09</span>Дети</h3>
+  <p>M31 Edu Cube 2D — образовательная головоломка. Бесплатная версия для Android, в которой может появиться реклама, не адресована детям младше 13 лет, а содержание рекламы ограничено (пункт 06). Версия для iPhone, iPad и Mac не содержит рекламы и не собирает никаких данных. Мы сознательно не собираем персональные данные детей. Покупки обслуживает магазин, который применяет собственный родительский контроль.</p>
+
+  <h3><span class="num">10</span>Ваши права</h3>
+  <p>На основании GDPR, британского GDPR и швейцарского закона о защите данных вы имеете право на доступ к данным, их исправление, удаление, ограничение обработки, перенос и возражение, а также право подать жалобу в орган по защите данных. Согласие на рекламу можно отозвать в любой момент: Настройки → «Настройки конфиденциальности рекламы».</p>
+  <p>Сами мы не храним ваших персональных данных, поэтому нам нечего предоставить, исправить или удалить. Рекламные данные обрабатывает Google — управлять ими можно в <a href="https://myadcenter.google.com/?hl=ru">Моём рекламном центре</a>. Данными, сохранёнными в приложении, вы управляете через настройки устройства. Если у вас есть вопросы о конфиденциальности, напишите на контактный адрес.</p>
+
+  <h3><span class="num">11</span>Изменения в политике</h3>
+  <p>Эта версия политики охватывает рекламу в версии для Android (начиная с версии приложения 1.0.001). При дальнейших изменениях мы обновим эту страницу и дату «Действует с» в начале документа.</p>
+
+</section>
+
+<!-- ══════════════════ العربية ══════════════════ -->
+
+<section class="lang" id="ar" lang="ar" dir="rtl">
+  <h2>سياسة الخصوصية</h2>
+
+  <div class="core">
+    <p><strong>ليست لدينا حسابات ولا خادم خاص بنا، ولا نجمع بياناتك الشخصية.</strong> لا تحتوي نسخة iPhone وiPad وMac على إعلانات ولا على أدوات تحليلات.</p>
+    <p>تعرض نسخة Android المجانية إعلانًا من Google AdMob <strong>فقط عندما تختار أنت مشاهدته</strong>. وتعالج Google لهذا الغرض البيانات الموضحة في البند 06. أما مع Premium فلا توجد إعلانات.</p>
+  </div>
+
+  <h3><span class="num">01</span>مَن المسؤول</h3>
+  <p>تطبيق «M31 Edu Cube 2D» (المعرّف <code dir="ltr">ch.m31.edu.cube2d</code>) تنشره Neuron M31 (Andrzej Węgrzyn). للمسائل المتعلقة بالخصوصية، اكتب إلى العنوان المذكور في أعلى هذه الصفحة.</p>
+
+  <h3><span class="num">02</span>الأذونات</h3>
+  <p>لا يطلب التطبيق الوصول إلى الميكروفون أو الكاميرا أو جهات الاتصال أو الصور أو الملفات أو الموقع الجغرافي، ولا يعرض أي طلبات أذونات من النظام. وتتمتع نسخة Android بأذونات عادية تُمنح دون سؤال: الاهتزاز، والوصول إلى الإنترنت، والشراء عبر Google Play، و— من أجل وحدة إعلانات Google — معرّف الإعلانات. التفاصيل في البندين 04 و06.</p>
+
+  <h3><span class="num">03</span>البيانات على جهازك</h3>
+  <p>يحفظ التطبيق <strong>على جهازك</strong>: اللغة المختارة، واسمك (إن أدخلته — ويُستخدم للترحيب داخل التطبيق فحسب)، ومعرّف التثبيت (يتكوّن من رمز اللغة ووقت أول تشغيل؛ ويظهر في «حول التطبيق» لتتمكن من ذكره عند التواصل معنا)، والإعدادات، واللعبة الجارية، وتصاميم المكعب التي أنشأتها، وعدّادات حدود النسخة المجانية، ومعلومة ما إذا كان Premium مُفعَّلًا. ولا يرسل التطبيق أيًّا من ذلك إلى أي مكان، ولا يمكننا الوصول إليه.</p>
+  <p>إذا كانت ميزة النسخ الاحتياطي في Android (Auto Backup) مُفعَّلة، فقد ينسخ Android هذه البيانات إلى حسابك في Google؛ وفي نظام iOS قد يحدث الأمر نفسه عبر نسخة احتياطية لجهازك في iCloud. ويجري ذلك داخل خدمات Google أو Apple ووفق سياسات الخصوصية الخاصة بهما، ويبقى تحت سيطرتك — إذ يمكنك تعطيله من إعدادات الجهاز.</p>
+  <p>إلغاء تثبيت التطبيق يحذف البيانات المحفوظة. ويمكنك كذلك إعادة تعيينها بمحو بيانات التطبيق من إعدادات النظام.</p>
+
+  <h3><span class="num">04</span>الشراء داخل التطبيق</h3>
+  <p>Premium عملية شراء لمرة واحدة تُجرى عبر نظام الدفع في Google Play (لنظام Android) أو App Store (لأجهزة iPhone وiPad وMac). ويتولى المتجر عملية الشراء بالكامل — فالتطبيق <strong>لا يرى ولا يحفظ</strong> بيانات البطاقة أو عناوين الفواتير أو أي معلومات دفع أخرى. وهو يسأل المتجر فقط عمّا إذا كان Premium يخص الحساب الذي تم تسجيل الدخول به على الجهاز، ثم يحفظ هذا الجواب محليًا. وتُرسل إلينا المتاجر تقارير بيع (مثل رقم الطلب والتاريخ والبلد والسعر)، ونحتاج إليها للمحاسبة وعمليات رد المبالغ.</p>
+  <p>يعمل Premium المُشترى من App Store على جميع أجهزتك iPhone وiPad وMac المسجَّل عليها الدخول بحساب Apple ذاته. ولا تُنقل عمليات الشراء بين Google Play وApp Store.</p>
+  <p>لا يتصل التطبيق بالإنترنت إلا لغرضين: إتمام عملية شراء عبر المتجر، و— في نسخة Android المجانية وحدها — عرض إعلان (البند 06).</p>
+
+  <h3><span class="num">05</span>التحديات</h3>
+  <p>التحدي رمز قصير (16 حرفًا، و24 في اللعب الحر؛ ويبدأ بـ <code dir="ltr">M31</code>) يصف مكعبًا مخلوطًا: حجمه، وترتيب ألوانه، وشبكته، وعدد الحركات. ولا يحتوي على اسم ولا حساب ولا معرّف جهاز ولا نص حر. ولا يرسل التطبيق الرموز إلى أي خادم.</p>
+  <p>عند مشاركة تحدٍّ تختار أنت الطريقة: بخاصية المشاركة في جهازك أو بنسخ الرمز. والخدمة التي تختارها (تطبيق مراسلة أو البريد الإلكتروني أو غيرهما) تعالج الرسالة وفق سياسة الخصوصية الخاصة بها.</p>
+  <p>وتستلم التحدي بكتابة الرمز أو عبر «لصق من الحافظة» — ولا يقرأ التطبيق الحافظة إلا عند لمسك هذا الزر. ولا يُرسل أي شيء إلى المُرسِل.</p>
+
+  <h3><span class="num">06</span>الإعلانات — في نسخة Android المجانية وحدها</h3>
+  <p><strong>متى.</strong> لا تعمل وحدة إعلانات Google إلا في نسخة Android المجانية، وبعد انتهاء المدة التجريبية. فلا إعلانات خلال المدة التجريبية، ولا مع Premium، ولا في نسخة iPhone وiPad وMac.</p>
+  <p><strong>كيف.</strong> هو إعلان بمكافأة: لا يظهر إلا بعد لمسك «مشاهدة إعلان»، وبعد مشاهدته تُفتح ميزات إضافية لمدة 10 دقائق. ولا يعرض التطبيق إعلانًا من تلقاء نفسه أبدًا. ولكي يتمكن الإعلان من البدء دون انتظار، تحمّله الوحدة مسبقًا — ولذلك قد تعالج Google بيانات حتى إن لم تشاهد أي إعلان.</p>
+  <p><strong>مَن.</strong> Google AdMob — وهي Google Ireland Limited للمستخدمين في المنطقة الاقتصادية الأوروبية وسويسرا، وGoogle LLC في غيرها.</p>
+  <p><strong>أي بيانات.</strong> قد تعالج Google ما يلي:</p>
+  <ul>
+    <li>عنوان IP الخاص بك، ولتقدير موقعك التقريبي كذلك،</li>
+    <li>معرّف الإعلانات ومعرّف مجموعة التطبيقات،</li>
+    <li>التفاعلات مع التطبيق ومع الإعلان (تشغيل التطبيق، واللمسات، ومشاهدات الفيديو)،</li>
+    <li>بيانات تشخيصية (مثل زمن التشغيل والأداء).</li>
+  </ul>
+  <p>الأغراض: عرض الإعلانات وقياسها، والتحليلات، ومنع الاحتيال. وتُنقل البيانات مشفَّرة. ولا نتلقى من Google إلا إحصاءات مجمّعة (كعدد الإعلانات المعروضة)، دون بيانات تحدد هويتك.</p>
+  <p><strong>الموافقة.</strong> في المنطقة الاقتصادية الأوروبية والمملكة المتحدة وسويسرا، يظهر نموذج موافقة Google قبل أول إعلان. ويمكنك تغيير اختيارك في أي وقت: الإعدادات ← «إعدادات خصوصية الإعلانات». وإذا لم توافق، فقد تعرض Google إعلانات غير مخصَّصة أو محدودة. وتحفظ وحدة الموافقة من Google اختيارك على الجهاز.</p>
+  <p><strong>لا إغلاق للميزات.</strong> إذا تعذّر عرض أي إعلان (لعدم الموافقة أو انعدام الاتصال أو عدم توافر إعلان)، يعرض التطبيق بطاقة عن تطبيقنا M31 Edu Arabic (البند 07) ويفتح الميزات على أي حال.</p>
+  <p><strong>معرّف الإعلانات.</strong> يمكنك إعادة تعيينه أو حذفه من إعدادات Android (الخصوصية ← الإعلانات، أو Google ← الإعلانات).</p>
+  <p><strong>محتوى الإعلانات</strong> مقصور على تصنيف النضج «PG» لدى Google.</p>
+  <p><strong>الأساس القانوني</strong> (اللائحة العامة لحماية البيانات GDPR، واللائحة البريطانية لحماية البيانات، والقانون الفيدرالي السويسري لحماية البيانات): موافقتك حيث تكون مطلوبة؛ وفي غير ذلك مصلحتنا المشروعة في تمويل النسخة المجانية ومنع الاحتيال.</p>
+  <p>للمزيد: <a href="https://policies.google.com/technologies/partner-sites?hl=ar">كيف تستخدم Google المعلومات الواردة من المواقع أو التطبيقات التي تستعين بخدماتها</a> · <a href="https://policies.google.com/privacy?hl=ar">سياسة خصوصية Google</a>.</p>
+
+  <h3><span class="num">07</span>الترويج لتطبيقنا</h3>
+  <p>عندما لا يكون لدى Google إعلان، يعرض التطبيق بطاقة عن تطبيقنا M31 Edu Arabic. وزر «عرض في المتجر» يفتح Google Play. ولا ينقل التطبيق أي بيانات عند ذلك.</p>
+
+  <h3><span class="num">08</span>ما لا يفعله التطبيق</h3>
+  <ul>
+    <li>لا حساب مستخدم ولا تسجيل دخول،</li>
+    <li>لا يجمع الاسم ولا البريد الإلكتروني ولا رقم الهاتف — واسمك، إن أدخلته، يبقى على الجهاز،</li>
+    <li>لا يحدد موقعك (في النسخة التي تحتوي إعلانات، Google وحدها قد تقدّر موقعًا تقريبيًا من عنوان IP، البند 06)،</li>
+    <li>لا تحليلات خاصة به ولا إحصاءات استخدام ولا تقارير أخطاء،</li>
+    <li>لا يعرض إعلانًا من تلقاء نفسه أبدًا، ولا يعرض أي إعلان على iPhone وiPad وMac،</li>
+    <li>لا محادثات ولا محتوى يرسله المستخدمون ولا قوائم تصنيف،</li>
+    <li>لا يبيع البيانات ولا يشاركها مع أطراف ثالثة؛ والاستثناء الوحيد هو وحدة إعلانات Google في نسخة Android المجانية (البند 06).</li>
+  </ul>
+
+  <h3><span class="num">09</span>الأطفال</h3>
+  <p>‏M31 Edu Cube 2D لعبة ذكاء تعليمية. ونسخة Android المجانية، التي قد يظهر فيها إعلان، ليست موجَّهة إلى الأطفال دون 13 عامًا، ومحتوى الإعلانات فيها محدود (البند 06). أما نسخة iPhone وiPad وMac فلا تحتوي إعلانات ولا تجمع أي بيانات. ولا نجمع بيانات شخصية للأطفال عن عِلم. ويتولى المتجر عمليات الشراء، ويطبّق أدوات الرقابة الأبوية الخاصة به.</p>
+
+  <h3><span class="num">10</span>حقوقك</h3>
+  <p>بموجب اللائحة العامة لحماية البيانات (GDPR) واللائحة البريطانية لحماية البيانات والقانون الفيدرالي السويسري لحماية البيانات، لك الحق في الوصول إلى بياناتك وتصحيحها ومحوها وتقييد معالجتها ونقلها والاعتراض عليها، ولك كذلك الحق في تقديم شكوى إلى هيئة لحماية البيانات. ويمكنك سحب موافقتك على الإعلانات في أي وقت من الإعدادات ← «إعدادات خصوصية الإعلانات».</p>
+  <p>ونحن أنفسنا لا نحتفظ بأي بيانات شخصية عنك، فلا شيء يمكننا تقديمه أو تصحيحه أو حذفه. أما بيانات الإعلانات فتعالجها Google — ويمكنك إدارتها في <a href="https://myadcenter.google.com/?hl=ar">مركز إعلاناتي</a>. والبيانات التي يحفظها التطبيق تتحكم فيها من إعدادات جهازك. وإن كانت لديك أسئلة عن الخصوصية فاكتب إلى عنوان التواصل.</p>
+
+  <h3><span class="num">11</span>التغييرات في هذه السياسة</h3>
+  <p>تشمل هذه النسخة من السياسة الإعلانات في نسخة Android (ابتداءً من الإصدار 1.0.001 من التطبيق). وإذا تغيّر سلوك التطبيق مرة أخرى، فسنحدّث هذه الصفحة وتاريخ «ساري من» في أعلاها.</p>
+
+</section>
+
+<!-- ══════════════════ 中文 ══════════════════ -->
+
+<section class="lang" id="zh" lang="zh-Hans">
+  <h2>隐私政策</h2>
+
+  <div class="core">
+    <p><strong>我们没有账号，也没有自己的服务器，并且不收集您的个人数据。</strong>iPhone、iPad 和 Mac 版本不含广告，也不含分析工具。</p>
+    <p>免费的 Android 版本<strong>只在您自己选择观看时</strong>才显示 Google AdMob 广告。为此，Google 会处理第 06 节所述的数据。使用 Premium 则没有广告。</p>
+  </div>
+
+  <h3><span class="num">01</span>谁负责本应用</h3>
+  <p>应用“M31 Edu Cube 2D”（标识符 <code>ch.m31.edu.cube2d</code>）由 Neuron M31（Andrzej Węgrzyn）发布。隐私相关事宜，请写信至本页开头所列的地址。</p>
+
+  <h3><span class="num">02</span>权限</h3>
+  <p>本应用不请求访问您的麦克风、摄像头、通讯录、照片、文件或位置，也不显示系统权限请求。Android 版本拥有无需询问即授予的普通权限：振动、互联网访问、Google Play 内购，以及供 Google 广告模块使用的广告 ID。详情见第 04 节和第 06 节。</p>
+
+  <h3><span class="num">03</span>您设备上的数据</h3>
+  <p>本应用在<strong>您的设备上</strong>保存：所选语言、您的名字（如果您填写——仅用于应用内的问候语）、安装标识符（由语言代码和首次启动时间生成；显示在“关于应用”中，便于您联系我们时提供）、设置、进行中的游戏、您的立方体设计、免费版限额计数器，以及 Premium 是否已启用的信息。本应用不会把其中任何内容发送到任何地方，我们也无法访问这些数据。</p>
+  <p>如果您启用了 Android 备份（Auto Backup），Android 可能会把这些数据复制到您的 Google 账号；在 iOS 上，同样的情况可能通过设备的 iCloud 备份发生。这发生在 Google 或 Apple 的服务内部，依照各自的隐私政策，并且始终由您控制——您可以在设备设置中关闭它。</p>
+  <p>卸载本应用会删除已保存的数据。您也可以在系统设置中清除应用数据，将其重置。</p>
+
+  <h3><span class="num">04</span>应用内购买</h3>
+  <p>Premium 是通过 Google Play（Android）或 App Store（iPhone、iPad、Mac）的结算系统完成的一次性购买。整个购买流程由应用商店处理——本应用<strong>从不查看也不存储</strong>卡片信息、账单地址或任何其他支付信息。它只向应用商店询问 Premium 是否属于设备上已登录的账号，并把该答复保存在本地。应用商店会向我们提供销售报表（例如订单号、日期、国家和价格），我们在记账和退款时需要这些信息。</p>
+  <p>在 App Store 购买的 Premium，可在以同一 Apple 账户登录的所有 iPhone、iPad 和 Mac 设备上使用。购买不会在 Google Play 与 App Store 之间转移。</p>
+  <p>本应用只为两个目的连接互联网：通过应用商店处理购买，以及——仅在免费的 Android 版本中——显示广告（第 06 节）。</p>
+
+  <h3><span class="num">05</span>挑战</h3>
+  <p>挑战是一段短代码（16 个字符，自由游戏中为 24 个；以 <code>M31</code> 开头），用于描述一个被打乱的立方体：尺寸、颜色排布、展开图和步数。其中不含姓名、账号、设备标识符，也没有自由文本。本应用不会把代码发送到任何服务器。</p>
+  <p>分享挑战时，由您自己选择方式：使用设备的分享功能，或复制代码。您所选择的服务（即时通讯软件、电子邮件等）会依照其自身的隐私政策处理该消息。</p>
+  <p>您可以通过输入代码或使用“从剪贴板粘贴”来接收挑战——只有在您点按该按钮时，本应用才会读取剪贴板。不会向发送者回传任何内容。</p>
+
+  <h3><span class="num">06</span>广告——仅限免费的 Android 版本</h3>
+  <p><strong>何时。</strong>Google 广告模块仅在免费的 Android 版本中、试用期结束之后运行。在试用期内、使用 Premium 时，以及在 iPhone、iPad 和 Mac 版本中，均没有广告。</p>
+  <p><strong>如何。</strong>这是一则激励广告：只有在您点按“观看广告”之后才会出现，观看完毕后会在 10 分钟内解锁额外功能。本应用绝不会自行显示广告。为了让广告能够无需等待即可开始，模块会提前加载它——因此即使您从未观看任何广告，Google 也可能处理数据。</p>
+  <p><strong>由谁。</strong>Google AdMob——对于欧洲经济区和瑞士的用户为 Google Ireland Limited，其他地区为 Google LLC。</p>
+  <p><strong>哪些数据。</strong>Google 可能处理：</p>
+  <ul>
+    <li>您的 IP 地址，也用于估算您的大致位置，</li>
+    <li>广告 ID 和应用集 ID，</li>
+    <li>与应用和广告的交互（应用启动、点按、视频观看），</li>
+    <li>诊断数据（例如启动时间和性能）。</li>
+  </ul>
+  <p>目的：展示和衡量广告、分析以及防范欺诈。数据以加密方式传输。我们从 Google 只获得汇总统计（例如广告展示次数），不含可识别您身份的数据。</p>
+  <p><strong>同意。</strong>在欧洲经济区、英国和瑞士，首次广告之前会出现 Google 的同意表单。您可以随时更改选择：设置 →“广告隐私设置”。如果您不同意，Google 可能展示非个性化或受限的广告。Google 的同意模块会把您的选择保存在设备上。</p>
+  <p><strong>不会被锁住。</strong>如果无法展示广告（没有同意、没有网络连接、没有可用广告），本应用会显示一张介绍我们应用 M31 Edu Arabic 的卡片（第 07 节），并仍然解锁相应功能。</p>
+  <p><strong>广告 ID。</strong>您可以在 Android 设置中重置或删除它（隐私 → 广告，或 Google → 广告）。</p>
+  <p><strong>广告内容</strong>限于 Google 的“PG”成熟度分级。</p>
+  <p><strong>法律依据</strong>（GDPR、英国 GDPR、瑞士《联邦数据保护法》）：在需要同意之处，为您的同意；其他情况下，为我们在资助免费版本和防范欺诈方面的正当利益。</p>
+  <p>更多信息：<a href="https://policies.google.com/technologies/partner-sites?hl=zh-CN">Google 如何使用使用其服务的网站或应用中的信息</a> · <a href="https://policies.google.com/privacy?hl=zh-CN">Google 隐私权政策</a>。</p>
+
+  <h3><span class="num">07</span>推广我们自己的应用</h3>
+  <p>当 Google 没有广告时，本应用会显示一张介绍我们应用 M31 Edu Arabic 的卡片。“在商店中查看”会打开 Google Play。本应用在此过程中不传递任何数据。</p>
+
+  <h3><span class="num">08</span>本应用不会做的事</h3>
+  <ul>
+    <li>没有用户账号，无需登录，</li>
+    <li>不收集姓名、电子邮件地址或电话号码——您填写的名字会留在设备上，</li>
+    <li>不确定您的位置（在含广告的版本中，只有 Google 可能依据 IP 地址估算大致位置，第 06 节），</li>
+    <li>没有自己的分析、使用统计或错误报告，</li>
+    <li>绝不自行显示广告，在 iPhone、iPad 和 Mac 上则完全没有广告，</li>
+    <li>没有聊天功能、用户提交的内容或排行榜，</li>
+    <li>不出售数据，也不与第三方共享；唯一的例外是免费 Android 版本中的 Google 广告模块（第 06 节）。</li>
+  </ul>
+
+  <h3><span class="num">09</span>儿童</h3>
+  <p>M31 Edu Cube 2D 是一款教育类益智游戏。可能出现广告的免费 Android 版本并非面向 13 岁以下儿童，且广告内容受到限制（第 06 节）。iPhone、iPad 和 Mac 版本不含广告，也不收集任何数据。我们不会在知情的情况下收集儿童的个人数据。购买由应用商店处理，并适用其自身的家长控制。</p>
+
+  <h3><span class="num">10</span>您的权利</h3>
+  <p>依据 GDPR、英国 GDPR 和瑞士《联邦数据保护法》，您享有访问、更正、删除、限制处理、数据可携带和反对的权利，以及向数据保护机构投诉的权利。您可以随时在设置 →“广告隐私设置”中撤回对广告的同意。</p>
+  <p>我们自己并不持有您的任何个人数据，因此没有可供提供、更正或删除的内容。广告数据由 Google 处理——您可以在<a href="https://myadcenter.google.com/?hl=zh-CN">我的广告中心</a>中管理。应用所保存的数据，由您通过设备设置掌控。如有隐私方面的问题，请写信至联系地址。</p>
+
+  <h3><span class="num">11</span>本政策的变更</h3>
+  <p>本版政策涵盖 Android 版本中的广告（自应用 1.0.001 版起）。如果应用的行为再次发生变化，我们将更新本页以及开头的“生效日期”。</p>
+
+</section>
+
+<!-- ══════════════════ 日本語 ══════════════════ -->
+
+<section class="lang" id="ja" lang="ja">
+  <h2>プライバシーポリシー</h2>
+
+  <div class="core">
+    <p><strong>当方はアカウントも自前のサーバーも持たず、お客様の個人データを収集しません。</strong>iPhone・iPad・Mac 版には広告も分析ツールも含まれていません。</p>
+    <p>無料の Android 版は、<strong>お客様ご自身が視聴を選んだときにのみ</strong> Google AdMob の広告を表示します。その際、Google は第 06 節に記載のデータを処理します。Premium では広告は表示されません。</p>
+  </div>
+
+  <h3><span class="num">01</span>責任者</h3>
+  <p>アプリ「M31 Edu Cube 2D」（識別子 <code>ch.m31.edu.cube2d</code>）は Neuron M31（Andrzej Węgrzyn）が提供しています。プライバシーに関するお問い合わせは、本ページ冒頭に記載の宛先までお願いします。</p>
+
+  <h3><span class="num">02</span>権限</h3>
+  <p>本アプリはマイク、カメラ、連絡先、写真、ファイル、位置情報へのアクセスを求めず、システムの権限リクエストも表示しません。Android 版は、確認なしに付与される通常の権限を持ちます。すなわち、バイブレーション、インターネットアクセス、Google Play での購入、そして Google 広告モジュール用の広告 ID です。詳細は第 04 節および第 06 節に記載しています。</p>
+
+  <h3><span class="num">03</span>お客様の端末上のデータ</h3>
+  <p>本アプリは<strong>お客様の端末に</strong>次の情報を保存します。選択した言語、お名前（入力された場合。アプリ内のあいさつにのみ使用します）、インストール識別子（言語コードと初回起動時刻から生成され、お問い合わせの際にお伝えいただけるよう「アプリについて」に表示されます）、設定、進行中のゲーム、お客様のキューブのデザイン、無料版の上限カウンター、および Premium が有効かどうかの情報です。本アプリはこれらをどこにも送信せず、当方もアクセスできません。</p>
+  <p>Android バックアップ（Auto Backup）を有効にしている場合、Android がこれらのデータをお客様の Google アカウントにコピーすることがあります。iOS では端末の iCloud バックアップを通じて同様のことが起こり得ます。これは Google または Apple のサービス内で、それぞれのプライバシーポリシーに従って行われ、お客様の管理下にあります。端末の設定で無効にできます。</p>
+  <p>本アプリを削除すると、保存されたデータも削除されます。システム設定でアプリのデータを消去して初期化することもできます。</p>
+
+  <h3><span class="num">04</span>アプリ内購入</h3>
+  <p>Premium は、Google Play（Android）または App Store（iPhone・iPad・Mac）の課金システムを通じた一度だけの購入です。購入手続きはすべてストアが処理し、本アプリはカード情報、請求先住所その他の支払い情報を<strong>一切参照も保存もしません</strong>。本アプリはストアに対し、Premium が端末でサインイン中のアカウントに属するかどうかのみを問い合わせ、その回答を端末内に保存します。ストアからは売上レポート（注文番号、日付、国、価格など）が当方に提供され、これは会計処理と払い戻しに必要です。</p>
+  <p>App Store で購入した Premium は、同一の Apple アカウントでサインインしているすべての iPhone・iPad・Mac でご利用いただけます。購入は Google Play と App Store の間では引き継がれません。</p>
+  <p>本アプリがインターネットに接続するのは次の二つの目的のみです。ストアを通じた購入処理、および——無料の Android 版に限り——広告の表示（第 06 節）です。</p>
+
+  <h3><span class="num">05</span>チャレンジ</h3>
+  <p>チャレンジとは、シャッフルされたキューブを表す短いコード（16 文字、フリープレイでは 24 文字。<code>M31</code> で始まります）です。キューブの大きさ、色の配置、展開図、手数を表します。氏名、アカウント、端末識別子、自由入力のテキストは含まれません。本アプリはコードをいかなるサーバーにも送信しません。</p>
+  <p>チャレンジを共有する際は、方法をお客様が選びます。端末の共有機能を使うか、コードをコピーするかです。お客様が選んだサービス（メッセンジャー、メールなど）は、そのサービス自身のプライバシーポリシーに従ってメッセージを取り扱います。</p>
+  <p>チャレンジを受け取るには、コードを入力するか「クリップボードから貼り付け」を使います。本アプリがクリップボードを読み取るのは、このボタンをタップしたときだけです。送信者側には何も返されません。</p>
+
+  <h3><span class="num">06</span>広告——無料の Android 版のみ</h3>
+  <p><strong>いつ。</strong>Google の広告モジュールが動作するのは、無料の Android 版で試用期間が終了したあとだけです。試用期間中、Premium の場合、および iPhone・iPad・Mac 版では広告はありません。</p>
+  <p><strong>どのように。</strong>これはリワード広告です。「広告を見る」をタップしたあとにのみ表示され、視聴後は 10 分間、追加機能が利用できるようになります。本アプリが自ら広告を表示することは決してありません。広告を待たずに開始できるよう、モジュールは事前に広告を読み込みます。そのため、お客様が広告を一度も視聴しない場合でも、Google がデータを処理することがあります。</p>
+  <p><strong>誰が。</strong>Google AdMob——欧州経済領域およびスイスのユーザーについては Google Ireland Limited、それ以外の地域では Google LLC です。</p>
+  <p><strong>どのデータ。</strong>Google は次の情報を処理することがあります。</p>
+  <ul>
+    <li>IP アドレス（おおよその所在地の推定にも使われます）、</li>
+    <li>広告 ID およびアプリセット ID、</li>
+    <li>アプリおよび広告との操作（アプリの起動、タップ、動画の視聴）、</li>
+    <li>診断データ（起動時間やパフォーマンスなど）。</li>
+  </ul>
+  <p>目的は、広告の表示と測定、分析、不正防止です。データは暗号化して送信されます。Google から当方が受け取るのは集計された統計（表示回数など）のみで、お客様を識別できるデータは含まれません。</p>
+  <p><strong>同意。</strong>欧州経済領域、英国、スイスでは、最初の広告の前に Google の同意フォームが表示されます。選択はいつでも変更できます。設定 →「広告のプライバシー設定」です。同意されない場合、Google はパーソナライズされていない広告または制限された広告を表示することがあります。Google の同意モジュールは、お客様の選択を端末に保存します。</p>
+  <p><strong>機能はロックされません。</strong>広告を表示できない場合（同意がない、接続がない、利用できる広告がない）、本アプリは当方のアプリ M31 Edu Arabic を紹介するカードを表示し（第 07 節）、それでも機能を利用できるようにします。</p>
+  <p><strong>広告 ID。</strong>Android の設定でリセットまたは削除できます（プライバシー → 広告、または Google → 広告）。</p>
+  <p><strong>広告の内容</strong>は Google の「PG」成熟度レーティングに制限されています。</p>
+  <p><strong>法的根拠</strong>（GDPR、英国 GDPR、スイス連邦データ保護法）：同意が必要な場合はお客様の同意、それ以外の場合は、無料版の運営資金の確保および不正防止に関する当方の正当な利益です。</p>
+  <p>詳細：<a href="https://policies.google.com/technologies/partner-sites?hl=ja">Google のサービスを使用するサイトやアプリから収集した情報の Google による使用</a> · <a href="https://policies.google.com/privacy?hl=ja">Google プライバシー ポリシー</a>。</p>
+
+  <h3><span class="num">07</span>当方のアプリの紹介</h3>
+  <p>Google に配信できる広告がない場合、本アプリは当方のアプリ M31 Edu Arabic を紹介するカードを表示します。「ストアで見る」を選ぶと Google Play が開きます。その際、本アプリはいかなるデータも渡しません。</p>
+
+  <h3><span class="num">08</span>本アプリが行わないこと</h3>
+  <ul>
+    <li>ユーザーアカウントはなく、サインインも不要です、</li>
+    <li>氏名、メールアドレス、電話番号を収集しません——入力されたお名前は端末内に留まります、</li>
+    <li>お客様の位置を特定しません（広告付きの版では、IP アドレスからおおよその所在地を推定し得るのは Google のみです。第 06 節）、</li>
+    <li>独自の分析、利用統計、クラッシュレポートを持ちません、</li>
+    <li>自ら広告を表示することは決してなく、iPhone・iPad・Mac ではまったく表示しません、</li>
+    <li>チャット、ユーザー投稿コンテンツ、ランキングはありません、</li>
+    <li>データを販売せず、第三者と共有しません。唯一の例外は、無料の Android 版における Google の広告モジュールです（第 06 節）。</li>
+  </ul>
+
+  <h3><span class="num">09</span>お子様について</h3>
+  <p>M31 Edu Cube 2D は教育的なパズルです。広告が表示され得る無料の Android 版は 13 歳未満のお子様を対象としておらず、広告の内容も制限されています（第 06 節）。iPhone・iPad・Mac 版には広告がなく、データも収集しません。当方は、お子様の個人データを知りながら収集することはありません。購入はストアが処理し、ストア自身のペアレンタルコントロールが適用されます。</p>
+
+  <h3><span class="num">10</span>お客様の権利</h3>
+  <p>GDPR、英国 GDPR、スイス連邦データ保護法に基づき、お客様にはアクセス、訂正、削除、処理の制限、データポータビリティ、異議申立ての権利、およびデータ保護機関に苦情を申し立てる権利があります。広告への同意は、設定 →「広告のプライバシー設定」でいつでも撤回できます。</p>
+  <p>当方はお客様の個人データを保持していないため、開示・訂正・削除できるものはありません。広告データは Google が処理しており、<a href="https://myadcenter.google.com/?hl=ja">マイ アド センター</a>で管理できます。本アプリが保存したデータは、端末の設定を通じてお客様が管理します。プライバシーに関するご質問は、連絡先の宛先までお寄せください。</p>
+
+  <h3><span class="num">11</span>本ポリシーの変更</h3>
+  <p>本ポリシーのこの版は、Android 版における広告を対象としています（アプリのバージョン 1.0.001 以降）。アプリの動作が再び変わる場合には、本ページと冒頭の「有効開始日」を更新します。</p>
+
+</section>
+
+<!-- ══════════════════ 한국어 ══════════════════ -->
+
+<section class="lang" id="ko" lang="ko">
+  <h2>개인정보처리방침</h2>
+
+  <div class="core">
+    <p><strong>저희는 계정도, 자체 서버도 없으며 귀하의 개인정보를 수집하지 않습니다.</strong> iPhone, iPad, Mac 버전에는 광고도 분석 도구도 없습니다.</p>
+    <p>무료 Android 버전은 <strong>귀하가 직접 시청을 선택할 때만</strong> Google AdMob 광고를 표시합니다. 이때 Google은 06항에 설명된 데이터를 처리합니다. Premium에서는 광고가 없습니다.</p>
+  </div>
+
+  <h3><span class="num">01</span>책임 주체</h3>
+  <p>앱 ‘M31 Edu Cube 2D’(식별자 <code>ch.m31.edu.cube2d</code>)는 Neuron M31(Andrzej Węgrzyn)이 배포합니다. 개인정보 관련 문의는 이 페이지 상단에 적힌 주소로 보내 주십시오.</p>
+
+  <h3><span class="num">02</span>권한</h3>
+  <p>이 앱은 마이크, 카메라, 연락처, 사진, 파일, 위치에 대한 접근을 요청하지 않으며 시스템 권한 요청도 표시하지 않습니다. Android 버전은 묻지 않고 부여되는 일반 권한을 가집니다. 진동, 인터넷 접속, Google Play 구매, 그리고 Google 광고 모듈용 광고 ID입니다. 자세한 내용은 04항과 06항에 있습니다.</p>
+
+  <h3><span class="num">03</span>기기에 저장되는 데이터</h3>
+  <p>이 앱은 <strong>귀하의 기기에</strong> 다음을 저장합니다. 선택한 언어, 이름(입력하는 경우 — 앱 내 인사말에만 사용됩니다), 설치 식별자(언어 코드와 첫 실행 시각으로 만들어지며, 문의 시 알려주실 수 있도록 ‘앱 정보’에 표시됩니다), 설정, 진행 중인 게임, 귀하의 큐브 디자인, 무료 버전 제한 카운터, Premium 활성 여부입니다. 앱은 이 가운데 어떤 것도 외부로 전송하지 않으며, 저희도 접근할 수 없습니다.</p>
+  <p>Android 백업(Auto Backup)을 켜 두었다면 Android가 이 데이터를 귀하의 Google 계정에 복사할 수 있습니다. iOS에서는 기기의 iCloud 백업을 통해 같은 일이 일어날 수 있습니다. 이는 Google 또는 Apple의 서비스 내에서 각자의 개인정보처리방침에 따라 이루어지며, 귀하의 통제 아래 있습니다. 기기 설정에서 끌 수 있습니다.</p>
+  <p>앱을 삭제하면 저장된 데이터도 삭제됩니다. 시스템 설정에서 앱 데이터를 지워 초기화할 수도 있습니다.</p>
+
+  <h3><span class="num">04</span>앱 내 구매</h3>
+  <p>Premium은 Google Play(Android) 또는 App Store(iPhone, iPad, Mac)의 결제 시스템을 통한 1회성 구매입니다. 구매 전체는 스토어가 처리하며, 앱은 카드 정보, 청구 주소, 그 밖의 어떤 결제 정보도 <strong>보지도 저장하지도 않습니다</strong>. 앱은 스토어에 Premium이 기기에 로그인된 계정에 속하는지만 묻고, 그 답변을 기기에 저장합니다. 스토어는 저희에게 판매 보고서(예: 주문 번호, 날짜, 국가, 가격)를 제공하며, 이는 회계와 환불에 필요합니다.</p>
+  <p>App Store에서 구매한 Premium은 같은 Apple 계정으로 로그인한 모든 iPhone, iPad, Mac 기기에서 작동합니다. 구매는 Google Play와 App Store 사이에서 이전되지 않습니다.</p>
+  <p>앱이 인터넷에 연결하는 목적은 두 가지뿐입니다. 스토어를 통한 구매 처리, 그리고 무료 Android 버전에 한해 광고 표시(06항)입니다.</p>
+
+  <h3><span class="num">05</span>챌린지</h3>
+  <p>챌린지는 섞인 큐브를 설명하는 짧은 코드입니다(16자, 자유 플레이에서는 24자. <code>M31</code>로 시작합니다). 큐브의 크기, 색 배치, 전개도, 이동 횟수를 담습니다. 이름, 계정, 기기 식별자, 자유 입력 텍스트는 포함되지 않습니다. 앱은 코드를 어떤 서버에도 보내지 않습니다.</p>
+  <p>챌린지를 공유할 때 방법은 귀하가 선택합니다. 기기의 공유 기능을 쓰거나 코드를 복사하는 것입니다. 귀하가 선택한 서비스(메신저, 이메일 등)는 자체 개인정보처리방침에 따라 메시지를 처리합니다.</p>
+  <p>챌린지는 코드를 입력하거나 ‘클립보드에서 붙여넣기’로 받습니다. 앱이 클립보드를 읽는 것은 그 버튼을 누를 때뿐입니다. 보낸 사람에게는 아무것도 되돌아가지 않습니다.</p>
+
+  <h3><span class="num">06</span>광고 — 무료 Android 버전만</h3>
+  <p><strong>언제.</strong> Google 광고 모듈은 무료 Android 버전에서 시험 기간이 끝난 뒤에만 작동합니다. 시험 기간 중, Premium 사용 시, 그리고 iPhone, iPad, Mac 버전에는 광고가 없습니다.</p>
+  <p><strong>어떻게.</strong> 보상형 광고입니다. ‘광고 보기’를 누른 뒤에만 나타나고, 시청을 마치면 10분 동안 추가 기능이 열립니다. 앱이 스스로 광고를 표시하는 일은 결코 없습니다. 광고가 기다림 없이 시작되도록 모듈이 미리 불러오기 때문에, 귀하가 광고를 한 번도 보지 않아도 Google이 데이터를 처리할 수 있습니다.</p>
+  <p><strong>누가.</strong> Google AdMob — 유럽경제지역과 스위스 이용자에게는 Google Ireland Limited, 그 밖의 지역에서는 Google LLC입니다.</p>
+  <p><strong>어떤 데이터.</strong> Google은 다음을 처리할 수 있습니다.</p>
+  <ul>
+    <li>IP 주소(대략적인 위치를 추정하는 데도 쓰입니다),</li>
+    <li>광고 ID와 앱 세트 ID,</li>
+    <li>앱 및 광고와의 상호작용(앱 실행, 누름, 동영상 시청),</li>
+    <li>진단 데이터(예: 실행 시간과 성능).</li>
+  </ul>
+  <p>목적은 광고 게재와 측정, 분석, 사기 방지입니다. 데이터는 암호화되어 전송됩니다. Google로부터 저희가 받는 것은 집계된 통계(예: 게재된 광고 수)뿐이며, 귀하를 식별할 수 있는 데이터는 포함되지 않습니다.</p>
+  <p><strong>동의.</strong> 유럽경제지역, 영국, 스위스에서는 첫 광고 전에 Google의 동의 양식이 나타납니다. 선택은 언제든 바꿀 수 있습니다. 설정 → ‘광고 개인 정보 보호 설정’입니다. 동의하지 않으면 Google은 맞춤설정되지 않은 광고나 제한된 광고를 표시할 수 있습니다. Google의 동의 모듈이 귀하의 선택을 기기에 저장합니다.</p>
+  <p><strong>기능이 잠기지는 않습니다.</strong> 광고를 표시할 수 없을 때(동의가 없거나, 연결이 없거나, 사용할 수 있는 광고가 없을 때) 앱은 저희 앱 M31 Edu Arabic을 소개하는 카드를 보여주고(07항) 기능은 그대로 열어 줍니다.</p>
+  <p><strong>광고 ID.</strong> Android 설정에서 재설정하거나 삭제할 수 있습니다(개인 정보 보호 → 광고, 또는 Google → 광고).</p>
+  <p><strong>광고 내용</strong>은 Google의 ‘PG’ 성숙도 등급으로 제한됩니다.</p>
+  <p><strong>법적 근거</strong>(GDPR, 영국 GDPR, 스위스 연방 데이터보호법): 동의가 필요한 곳에서는 귀하의 동의, 그 밖의 경우에는 무료 버전의 재원 마련과 사기 방지에 관한 저희의 정당한 이익입니다.</p>
+  <p>자세히: <a href="https://policies.google.com/technologies/partner-sites?hl=ko">Google 서비스를 사용하는 사이트나 앱에서 얻은 정보를 Google이 사용하는 방식</a> · <a href="https://policies.google.com/privacy?hl=ko">Google 개인정보처리방침</a>.</p>
+
+  <h3><span class="num">07</span>저희 앱 홍보</h3>
+  <p>Google에 게재할 광고가 없을 때 앱은 저희 앱 M31 Edu Arabic을 소개하는 카드를 보여줍니다. ‘스토어에서 보기’를 누르면 Google Play가 열립니다. 이때 앱은 어떤 데이터도 전달하지 않습니다.</p>
+
+  <h3><span class="num">08</span>앱이 하지 않는 일</h3>
+  <ul>
+    <li>사용자 계정이 없고 로그인도 필요하지 않습니다,</li>
+    <li>이름, 이메일 주소, 전화번호를 수집하지 않습니다 — 입력한 이름은 기기에 남습니다,</li>
+    <li>위치를 확인하지 않습니다(광고가 있는 버전에서 IP 주소로 대략적인 위치를 추정할 수 있는 것은 Google뿐입니다, 06항),</li>
+    <li>자체 분석, 사용 통계, 오류 보고가 없습니다,</li>
+    <li>스스로 광고를 표시하는 일이 결코 없고, iPhone, iPad, Mac에서는 아예 표시하지 않습니다,</li>
+    <li>채팅, 사용자가 올린 콘텐츠, 순위표가 없습니다,</li>
+    <li>데이터를 판매하지 않고 제3자와 공유하지 않습니다. 유일한 예외는 무료 Android 버전의 Google 광고 모듈입니다(06항).</li>
+  </ul>
+
+  <h3><span class="num">09</span>아동</h3>
+  <p>M31 Edu Cube 2D는 교육용 퍼즐입니다. 광고가 나타날 수 있는 무료 Android 버전은 13세 미만 아동을 대상으로 하지 않으며 광고 내용도 제한됩니다(06항). iPhone, iPad, Mac 버전에는 광고가 없고 어떤 데이터도 수집하지 않습니다. 저희는 아동의 개인정보를 알면서 수집하지 않습니다. 구매는 스토어가 처리하며 스토어 자체의 자녀 보호 기능이 적용됩니다.</p>
+
+  <h3><span class="num">10</span>귀하의 권리</h3>
+  <p>GDPR, 영국 GDPR, 스위스 연방 데이터보호법에 따라 귀하에게는 열람, 정정, 삭제, 처리 제한, 데이터 이동, 반대의 권리와 데이터 보호 기관에 민원을 제기할 권리가 있습니다. 광고에 대한 동의는 설정 → ‘광고 개인 정보 보호 설정’에서 언제든 철회할 수 있습니다.</p>
+  <p>저희는 귀하의 개인정보를 보유하지 않으므로 제공하거나 수정하거나 삭제할 것이 없습니다. 광고 데이터는 Google이 처리하며, <a href="https://myadcenter.google.com/?hl=ko">내 광고 센터</a>에서 관리할 수 있습니다. 앱이 저장한 데이터는 기기 설정을 통해 귀하가 관리합니다. 개인정보에 관한 문의는 연락처 주소로 보내 주십시오.</p>
+
+  <h3><span class="num">11</span>본 방침의 변경</h3>
+  <p>본 방침의 이번 판은 Android 버전의 광고를 다룹니다(앱 버전 1.0.001부터). 앱의 동작이 다시 바뀌면 이 페이지와 상단의 ‘시행일’을 갱신합니다.</p>
 
 </section>
 
